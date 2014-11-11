@@ -30,12 +30,28 @@ html
 									|выйти
 			.top.m-left
 				.top-in
-					.top-status Текущих заказов 6
+					ul.status-list
+						li.status-list-item
+							a(href="#").status-list-link
+								span.status-list-link-descr Принятых заказов
+								span.status-list-link-num 143
+						li.status-list-item
+							a(href="#").status-list-link
+								span.status-list-link-descr Выполнено
+								span.status-list-link-num 135
+						li.status-list-item
+							a(href="#").status-list-link
+								span.status-list-link-descr Текущих
+								span.status-list-link-num 3
+						li.status-list-item
+							a(href="#").status-list-link
+								span.status-list-link-descr Текущих
+								span.status-list-link-num 3
 					ul.top-list
 						li.top-list-item
 							a(href="#").top-link
-								span.top-link-note Новые заказы
-								span.top-link-num 8
+								span.top-link-note Отменено 
+								span.top-link-num 5
 						li.top-list-item
 							a(href="#").top-link
 								span.top-link-note Текущие заказы
@@ -45,18 +61,24 @@ html
 								span.top-link-note Журнал
 		.page.js-set-height.js-scroll
 			.page-in
-				ul.order.m-new
+				ul.order.m-archive
 					li.order-item
 						.order-item-date
 							.order-item-date-num 26
 							.order-item-date-mount сен
-						.order-item-time
-							.order-item-time-time 22 : 30
-							.order-item-time-note начало
+						.order-item-time.m-interval
+							.order-item-time-item
+								.order-item-time-time 22 : 30
+								.order-item-time-note начало
+							.order-item-time-item
+								.order-item-time-time 22 : 30
+								.order-item-time-note конец
 						.order-item-car
 							.order-item-car-item
 								span.order-item-car-model Jaguar 
 								span.order-item-car-type XKR
+								.order-add
+									i.order-add-ico
 							.order-item-car-owner 
 								span.order-item-car-owner-name Обама Барак
 								span.star
@@ -65,209 +87,27 @@ html
 									i.star-active
 									i.star-active
 									i.star-unnactive
-						.order-item-info.m-status
+						.order-item-box
+							.order-item-box-number e 007 кх 777
+							.order-item-box-title Бокс 3
+						.order-item-tel
+							.order-item-tel-number
+								span.small +7 (916) 
+								| 800 60 99
+							.order-item-tel-descr Телефон
+						.order-item-info
 							.order-item-info-left
 								.order-item-info-tel
-									.order-item-info-tel-number Избранный
-									.order-item-info-tel-descr заказ
-							.order-item-info-right
-								i.i-coffee.ico
-								i.i-wifi.ico
-								i.i-card.ico
-						.order-item-close
-							i.i-close
-						.order-item-succes
-							i.i-ok
-					li.order-item
-						.order-item-date
-							.order-item-date-num 26
-							.order-item-date-mount сен
-						.order-item-time
-							.order-item-time-time 22 : 00
-							.order-item-time-note начало 
-						.order-item-car
-							.order-item-car-item
-								span.order-item-car-model Mercedes-Benz 
-								span.order-item-car-type AMG GT I
-							.order-item-car-owner 
-								span.order-item-car-owner-name Обама Барак
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-info.m-status
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number Общий
-									.order-item-info-tel-descr конкурс
-							.order-item-info-right
-								i.i-basket.ico
-								i.i-sofa.ico 
-						.order-item-close
-							i.i-close
-						.order-item-succes
-							i.i-ok
-					li.order-item
-						.order-item-date
-							.order-item-date-num 25
-							.order-item-date-mount сен
-						.order-item-time
-							.order-item-time-time 13 : 30
-							.order-item-time-note начало
-						.order-item-car
-							.order-item-car-item
-								span.order-item-car-model Volkswagen 
-								span.order-item-car-type Passat CC
-							.order-item-car-owner 
-								span.order-item-car-owner-name Обама Барак
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-info.m-status
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number Общий
-									.order-item-info-tel-descr конкурс
-							.order-item-info-right
-								i.i-settings.ico
-								i.i-gas-station.ico
-								i.i-card.ico
-						.order-item-close
-							i.i-close
-						.order-item-succes
-							i.i-ok
-					li.order-item
-						.order-item-date
-							.order-item-date-num 25
-							.order-item-date-mount сен
-						.order-item-time
-							.order-item-time-time 18 : 00
-							.order-item-time-note начало
-						.order-item-car
-							.order-item-car-item
-								span.order-item-car-model Lamborghini 
-								span.order-item-car-type Aventador
-							.order-item-car-owner 
-								span.order-item-car-owner-name Обама Барак
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-info.m-status
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number Избранный
-									.order-item-info-tel-descr заказ
-							.order-item-info-right
-								i.i-coffee.ico
-								i.i-wifi.ico
-								i.i-basket.ico
-								i.i-sofa.ico
-								i.i-gas-station.ico
-						.order-item-close
-							i.i-close
-						.order-item-succes
-							i.i-ok
-					li.order-item
-						.order-item-date
-							.order-item-date-num 19
-							.order-item-date-mount сен
-						.order-item-time
-							.order-item-time-time 10 : 30
-							.order-item-time-note начало
-						.order-item-car
-							.order-item-car-item
-								span.order-item-car-model Porsche
-								span.order-item-car-type Panamera
-							.order-item-car-owner 
-								span.order-item-car-owner-name Обама Барак
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-info.m-status
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number Избранный
-									.order-item-info-tel-descr заказ
-							.order-item-info-right
-								i.i-sofa.ico
-						.order-item-close
-							i.i-close
-						.order-item-succes
-							i.i-ok
-					li.order-item
-						.order-item-date
-							.order-item-date-num 19
-							.order-item-date-mount сен
-						.order-item-time
-							.order-item-time-time 09 : 30
-							.order-item-time-note начало
-						.order-item-car
-							.order-item-car-item
-								span.order-item-car-model Lexus
-								span.order-item-car-type IS
-							.order-item-car-owner 
-								span.order-item-car-owner-name Обама Барак
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-info.m-status
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number Общий
-									.order-item-info-tel-descr конкурс
-							.order-item-info-right
-								i.i-coffee.ico
-								i.i-gas-station.ico
-								i.i-wifi.ico
-								i.i-card.ico
-						.order-item-close
-							i.i-close
-						.order-item-succes
-							i.i-ok
-					li.order-item
-						.order-item-date
-							.order-item-date-num 26
-							.order-item-date-mount сен
-						.order-item-time
-							.order-item-time-time 22 : 30
-							.order-item-time-note начало
-						.order-item-car
-							.order-item-car-item
-								span.order-item-car-model Jaguar 
-								span.order-item-car-type XKR
-							.order-item-car-owner 
-								span.order-item-car-owner-name Обама Барак
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-info.m-status
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number Избранный
-									.order-item-info-tel-descr заказ
-							.order-item-info-right
-								i.i-coffee.ico
-								i.i-wifi.ico
-								i.i-card.ico
-						.order-item-close
-							i.i-close
+									.order-item-info-tel-number 
+										span.order-item-info-tel-meta Отзыв клиента
+										span.star
+											i.star-active
+											i.star-active
+											i.star-active
+											i.star-active
+											i.star-unnactive
+											i.star-select
+									.order-item-info-tel-descr.m-elipsis Качество мойки – отличное, но Wi-Fi бы не поме ...
 						.order-item-succes
 							i.i-ok
 		script(data-headjs-load='js/init.js', src='js/lib/head.js')

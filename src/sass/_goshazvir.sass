@@ -8,7 +8,18 @@
 	width: 100%
 	&.m-new
 		.order-item-time
-			background: #f5f7f7 
+			background: #f5f7f7
+	&.m-archive
+		.order-item-time
+			width: 275px
+		.order-item-car
+			width: 250px
+		.order-item-box
+			width: 208px
+		.order-item-tel
+			width: 270px
+		.order-item-info
+			width: 370px
 	.order-item
 		// display: table-row
 		display: table
@@ -23,6 +34,19 @@
 		& > div
 			display: table-cell
 			vertical-align: middle
+	.order-item-tel
+		width: 245px
+		padding: 0 20px
+		border-right: 2px solid #eff2f3
+		.order-item-tel-number
+			font-size: 24px
+			color: $blue3
+			+light
+			.small
+				font-size: 18px
+		.order-item-tel-descr
+			+osl
+			color: #A0A4A5 
 	.order-item-date
 		width: 31px
 		padding: 0 10px
@@ -41,8 +65,16 @@
 		height: 106px 
 		background: url("../img/time-bg.png")
 		+cover
+		background-position: 50% top
 		color: $blue2
 		text-align: center
+		&.m-interval
+			.order-item-time-item
+				display: inline-block
+				vertical-align: middle
+				margin-left: 20px
+				&:first-child
+					margin-left: 0
 		.order-item-time-time
 			font-size: 24px
 		.order-item-time-note
@@ -52,6 +84,7 @@
 		padding: 0 30px
 		border-right: 2px solid #eff2f3
 		.order-item-car-item
+			position: relative
 			.order-item-car-model
 				font-size: 24px
 				color: $blue3
@@ -60,6 +93,11 @@
 				font-size: 24px
 				color: $blue3
 				+light
+			.order-add
+				position: absolute
+				top: 50%
+				right: 0
+				margin-top: -9px
 		.order-item-car-owner
 			.order-item-car-owner-name
 				display: inline-block
@@ -112,25 +150,49 @@
 				font-size: 15px  
 				color: #A0A4A5
 				+osl
+				&.m-elipsis
+					width: 280px
+					+text-overflow
+			.order-item-info-tel-meta
+				margin-right: 15px
+				color: $blue3
+				+light 
 	.order-item-close
 		width: 26px
 		padding: 0 15px
-		+g(#eef1f1, #f5f7f7)
+		background: linear-gradient(#eef1f1 0%, #f5f7f7 100%)
 		text-align: center
 		cursor: pointer
 		&:hover
-			+g(#eef1f1, #eef1f1)
+			background: linear-gradient(#eef1f1 0%, #eef1f1 100%)
 	.order-item-succes
 		width: 26px
 		padding: 0 15px
-		+g(#1099b5, #15adc4)
+		background: linear-gradient(#1099b5 0%, #15adc4 100%)
 		text-align: center
 		border-radius: 0 5px 5px 0
 		cursor: pointer
 		&:hover
-			+g(#1098b5, #1098b5)
+			background: linear-gradient(#1098b5 0%, #1098b5 100%)
+	.order-add
+		display: inline-block
+		width: 24px
+		height: 18px
+		line-height: 16px
+		border-radius: 9px
+		background: $blue1
+		text-align: center
+		cursor: pointer
+		transition: all 0.2s linear 0.2s
+		&:hover
+			background: $blue2
+			transition: all 0.2s linear 0.2s
+		.order-add-ico
+			display: inline-block
+			+s($s-plus)
+
 .star 
-	.star-active, .star-unnactive
+	.star-active, .star-unnactive, .star-select
 		display: inline-block
 		vertical-align: middle
 		margin-left: 5px
@@ -141,6 +203,50 @@
 		+s($s-star-active)
 	.star-unnactive
 		+s($s-star-unnactive)
+	.star-select
+		+s($s-star-select)
 
-// .js-set-height
-// 	overflow: hidden
+.status-list
+	width: 100%
+	margin-left: -50px
+	position: absolute
+	bottom: -48px
+	font-size: 0
+	text-align: center
+	.status-list-item
+		display: inline-block
+		vertical-align: middle
+		margin-left: 7px
+		font-size: 14px
+		&:first-child
+			margin-left: 0
+	.status-list-link
+		display: inline-block
+		height: 30px
+		line-height: 30px
+		padding: 0 13px
+		background: #15ADC4 
+		border-radius: 15px
+		color: #FFF
+		transition: opacity 0.2s linear 0.2s
+		&:hover
+			opacity: 0.8
+			transition: opacity 0.2s linear 0.2s
+		.status-list-link-descr
+			margin-right: 5px
+			+osl
+		.status-list-link-num
+			+osb
+
+//	MEDIA
+// ===============================================
+// +rmin(1500)
+// 	.order
+// 		&.m-archive
+			// .order-item-car
+			// 	width: 330px
+			// .order-item-info
+			// 	.order-item-info-tel
+			// 		.order-item-info-tel-descr
+			// 			&.m-elipsis
+			// 				width: 330px

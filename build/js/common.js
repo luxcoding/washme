@@ -6,20 +6,24 @@ head.ready(function() {
     var sumHeight = (bodyheight - 211);
     var setHeight = $('.js-set-height').css('height', sumHeight);
   }
-  indexHeight()
+  indexHeight();
 
-  function headerAbsolute() {
-    if ($(window).width() <= 1330) {
-      $('.header').addClass('is-absolute');
-    }
-  }
-  headerAbsolute()
 
   $(window).resize(function(){
-    headerAbsolute()
+    headerAbsolute();
   });
 
 });
+
+function headerAbsolute() {
+  if ($(window).width() <= 1330) {
+    $('.header').addClass('is-absolute');
+  }
+  else {
+      $('.header').removeClass('is-absolute');
+  }
+}
+headerAbsolute();
 
 (function($){
   $(window).load(function(){
