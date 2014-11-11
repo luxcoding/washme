@@ -1,0 +1,186 @@
+// VAR
+$gray: #9fa3a4
+$lgray: #d5e9ed
+
+$blue5: #1e2538
+$blue4: #235069
+$blue3: #29647a
+$blue2: #15adc4
+$blue1: #7fd2df
+
+$container-w: 1570px
+$container-min-w: 1330px 
+$tooper-h: 70px
+
+//	GENERAL
+// ===============================================
+body
+	background: #ebeff0 
+	+os
+	font-size: 15px 
+	line-height: 1.2 
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: antialiased
+
+.wrap
+	width: $container-min-w 
+	padding: 0 8px
+	margin: 0 auto
+
+%wrap
+	width: $container-min-w 
+	padding: 0 8px  
+	margin: 0 auto
+
+.wrap, a
+	color: #fffefe
+	text-decoration: none
+
+// a
+// 	transition: opacity 0.2s linear 0.2s
+// 	&:hover
+// 		opacity: 0.8
+// 		transition: opacity 0.2s linear 0.2s
+
+//	HEADER
+// ===============================================
+.header
+	position: fixed 
+	top: 0
+	width: 100%
+	z-index: 666
+.topper
+	background: url(../img/topper-bg.png) repeat-x
+	height: $tooper-h
+	box-sizing: border-box 
+	.topper-in
+		@extend %wrap
+		+clr
+	.logo
+		width: 260px
+		height: 69px
+		line-height: 69px
+		float: left 
+		background: url("../img/logo.png")
+		font-size: 23px
+		+HelveticaMedium
+		color: #fffefe
+		text-decoration: none   
+		position: relative
+		&:before
+			content: ""
+			width: 10000px
+			height: 69px
+			background: url("../img/logo-bg.png")
+			position: absolute
+			top: 0
+			right: 100%
+	.nav
+		margin-top: 24px
+		float: right
+		+clr
+		.nav-item
+			float: left 
+			margin-left: 75px
+		.nav-link
+			+osl
+			&:hover
+				.nav-text
+					text-decoration: underline		 
+		.nav-text
+			font-size: 16px
+			color: #e6f9fc  
+		.nav-label
+			width: 25px	
+			height: 18px
+			line-height: 18px
+			margin-right: 10px
+			display: inline-block
+			background-color: #10899e
+			border-radius: 9px
+			text-align: center
+			font-size: 12px
+			color: #e6f9fc 
+		.ico		
+			margin-right: 10px
+
+.top
+	height: 99px
+	line-height: 99px
+	background: #fff
+	&.m-center
+		text-align: center
+	&.m-left
+		text-align: left
+	&.m-right
+		text-align: right
+		.top-list
+			padding-right: 120px
+	.top-in
+		@extend %wrap
+		display: inline-block
+		line-height: 1.2
+		position: relative
+	.top-list
+		font-size: 0
+		.top-list-item
+			display: inline-block
+			margin-left: 70px
+			&:first-child
+				margin-left: 0
+	.top-status
+		width: 152px
+		position: absolute
+		bottom: -47px
+		left: 50%
+		margin-left: -52px
+		height: 30px
+		line-height: 30px
+		padding: 0 15px 
+		background: #15ADC4
+		border-radius: 15px
+		text-align: center
+		font-size: 14px
+		color: #FFF 
+		+osl
+		&:before
+			content: ""
+			+s($s-super-arr)
+			position: absolute
+			bottom: -10px
+			left: 50%
+			margin-left: -17px
+	.top-link
+		+light
+		font-size: 28px
+		color: $blue1
+		&.is-sexy
+			color: $blue3
+			.top-link-num
+			 background: $blue3
+		.top-link-note
+			display: inline-block
+			vertical-align: middle
+			margin-right: 15px
+		.top-link-num
+			display: inline-block
+			vertical-align: middle
+			padding: 3px 13px
+			border-radius: 13px
+			background-color: #15adc3
+			font-size: 16px
+			color: #fff 
+		
+//	PAGE 
+// ===============================================
+.page
+	min-height: 300px
+	padding-top: 211px
+	.page-in
+		@extend %wrap
+
+//	MEDIA
+// ===============================================
++r(1570)
+	%wrap
+		// background: red 

@@ -1,0 +1,86 @@
+﻿- var titleMod = { title: 'current orders 0_3' };
+- var session = { locale: '' }
+
+doctype html
+
+html
+	include includes/head.jade 
+	body
+		.header
+			.topper
+				.topper-in
+					a(href="#").logo
+						|wash me
+					ul.nav
+						li.nav-item 
+							a(href="#").nav-link
+								span.nav-label
+									|8
+								span.nav-text
+									|осталось
+						li.nav-item
+							a(href="#").nav-link
+								i.ico.i-set
+								span.nav-text
+									|моя мойка
+						li.nav-item
+							a(href="#").nav-link
+								i.ico.i-exit
+								span.nav-text
+									|выйти
+			.top.m-center
+				.top-in
+					.top-status Текущих заказов 6
+					ul.top-list
+						li.top-list-item
+							a(href="#").top-link
+								span.top-link-note Новые заказы
+								span.top-link-num 8
+						li.top-list-item
+							a(href="#").top-link.is-sexy
+								span.top-link-note Текущие заказы
+								span.top-link-num 6
+						li.top-list-item
+							a(href="#").top-link
+								span.top-link-note Журнал
+		.page
+			.page-in
+				ul.order
+					li.order-item
+						.order-item-date
+							.order-item-date-num 26
+							.order-item-date-mount сен
+						.order-item-time
+							.order-item-time-time 22 : 30
+							.order-item-time-note начало
+						.order-item-car
+							.order-item-car-item
+								span.order-item-car-model Jaguar
+								span.order-item-car-type XKR
+							.order-item-car-owner 
+								span.order-item-car-owner-name Обама Барак
+								span.star
+									i.star-active
+									i.star-active
+									i.star-active
+									i.star-active
+									i.star-unnactive
+						.order-item-box
+							.order-item-box-number e 007 кх 777
+							.order-item-box-title Бокс 3
+						.order-item-info
+							.order-item-info-left
+								.order-item-info-tel
+									.order-item-info-tel-number 
+										span.small +7 (916)
+										| 800 60 99
+									.order-item-info-tel-descr Телефон
+							.order-item-info-right
+								i.i-coffee.ico
+								i.i-wifi.ico
+								i.i-card.ico
+						.order-item-close
+							i.i-close
+						.order-item-succes
+							i.i-ok
+		script(data-headjs-load='js/init.js', src='js/lib/head.js')

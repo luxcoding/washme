@@ -1,0 +1,48 @@
+﻿- var titleMod = { title: 'TEMPLATE' };
+- var session = { locale: '' }
+
+doctype html
+
+html
+	include includes/head.jade 
+	body
+		.header
+			.topper 
+				.topper-in
+					a(href="#").logo
+						|wash me
+					ul.nav
+						li.nav-item 
+							a(href="#").nav-link
+								span.nav-label
+									|8
+								span.nav-text
+									|осталось
+						li.nav-item
+							a(href="#").nav-link
+								i.ico.i-set
+								span.nav-text
+									|моя мойка
+						li.nav-item
+							a(href="#").nav-link
+								i.ico.i-exit
+								span.nav-text
+									|выйти
+			.top.m-center
+				.top-in
+					ul.top-list
+						li.top-list-item
+							a(href="#").top-link
+								span.top-link-note Новые заказы
+								span.top-link-num 8
+						li.top-list-item
+							a(href="#").top-link.is-sexy
+								span.top-link-note Текущие заказы
+								span.top-link-num 6
+						li.top-list-item
+							a(href="#").top-link
+								span.top-link-note Журнал
+		.page
+			.page-in
+				|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores totam libero quisquam expedita deleniti aspernatur eos dolores necessitatibus possimus nesciunt voluptate omnis, optio labore accusantium rem vero error natus, laboriosam.
+		script(data-headjs-load='js/init.js', src='js/lib/head.js')
