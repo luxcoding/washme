@@ -49,12 +49,17 @@ body
 	top: 0
 	width: 100%
 	z-index: 666
+	&.is-absolute
+		width: 1346px
+		position: absolute
 .topper
 	background: url(../img/topper-bg.png) repeat-x
 	height: $tooper-h
 	box-sizing: border-box 
 	.topper-in
 		@extend %wrap
+		// width: 100%
+		// box-sizing: border-box 
 		+clr
 	.logo
 		width: 260px
@@ -112,12 +117,15 @@ body
 		text-align: center
 	&.m-left
 		text-align: left
+		padding-left: 120px
 	&.m-right
 		text-align: right
 		.top-list
 			padding-right: 120px
 	.top-in
 		@extend %wrap
+		// width: 100%
+		// box-sizing: border-box 
 		display: inline-block
 		line-height: 1.2
 		position: relative
@@ -137,7 +145,7 @@ body
 		height: 30px
 		line-height: 30px
 		padding: 0 15px 
-		background: #15ADC4
+		background: $blue2
 		border-radius: 15px
 		text-align: center
 		font-size: 14px
@@ -176,6 +184,8 @@ body
 .page
 	min-height: 300px
 	padding-top: 211px
+	&.js-set-height
+		min-height: 100px
 	.page-in
 		@extend %wrap
 
@@ -183,4 +193,8 @@ body
 // ===============================================
 +r(1570)
 	%wrap
-		// background: red 
+		// background: red
+
++r(1346)
+	.mCustomScrollBox>.mCSB_scrollTools
+		right: -6px

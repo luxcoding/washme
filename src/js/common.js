@@ -8,4 +8,25 @@ head.ready(function() {
   }
   indexHeight()
 
+  function headerAbsolute() {
+    if ($(window).width() <= 1330) {
+      $('.header').addClass('is-absolute');
+    }
+  }
+  headerAbsolute()
+
+  $(window).resize(function(){
+    headerAbsolute()
+  });
+
 });
+
+(function($){
+  $(window).load(function(){
+    $(".js-scroll").mCustomScrollbar({
+      scrollButtons:{
+        enable:false
+      }
+    });
+  });
+})(jQuery);
