@@ -8,6 +8,9 @@ head.ready(function() {
   }
   indexHeight();
 
+  $('.js-hide').on('click', function() {
+    $(this).parent().fadeOut();
+  });
 
   $(window).resize(function(){
     headerAbsolute();
