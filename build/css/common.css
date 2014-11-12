@@ -621,77 +621,77 @@ button[disabled], html input[disabled] {
 
 .i-set {
   background-image: url("../img/sprite.png");
-  background-position: -68px -112px;
+  background-position: -147px -112px;
   width: 17px;
   height: 17px;
 }
 
 .i-exit {
   background-image: url("../img/sprite.png");
-  background-position: -23px -112px;
+  background-position: -10px -112px;
   width: 17px;
   height: 18px;
 }
 
 .i-coffee {
   background-image: url("../img/sprite.png");
-  background-position: -38px -75px;
+  background-position: -86px -75px;
   width: 31px;
   height: 32px;
 }
 
 .i-wifi {
   background-image: url("../img/sprite.png");
-  background-position: -183px -75px;
+  background-position: -193px -75px;
   width: 33px;
   height: 28px;
 }
 
 .i-card {
   background-image: url("../img/sprite.png");
-  background-position: -221px -75px;
+  background-position: -231px -75px;
   width: 33px;
   height: 24px;
 }
 
 .i-close {
   background-image: url("../img/sprite.png");
-  background-position: -45px -112px;
+  background-position: -78px -112px;
   width: 18px;
   height: 18px;
 }
 
 .i-ok {
   background-image: url("../img/sprite.png");
-  background-position: -259px -75px;
+  background-position: -32px -112px;
   width: 18px;
   height: 18px;
 }
 
 .i-basket {
   background-image: url("../img/sprite.png");
-  background-position: -145px -75px;
+  background-position: -155px -75px;
   width: 33px;
   height: 30px;
 }
 
 .i-sofa {
   background-image: url("../img/sprite.png");
-  background-position: 0px -75px;
+  background-position: -10px -75px;
   width: 33px;
   height: 32px;
 }
 
 .i-gas-station {
   background-image: url("../img/sprite.png");
-  background-position: -112px -75px;
+  background-position: -122px -75px;
   width: 28px;
   height: 32px;
 }
 
 .i-settings {
   background-image: url("../img/sprite.png");
-  background-position: -74px -75px;
+  background-position: -48px -75px;
   width: 33px;
   height: 32px;
 }
@@ -926,7 +926,7 @@ body {
 .top .top-status:before {
   content: "";
   background-image: url("../img/sprite.png");
-  background-position: -117px -112px;
+  background-position: -196px -112px;
   width: 34px;
   height: 10px;
   position: absolute;
@@ -998,6 +998,241 @@ body {
     width: 1570px;
     box-sizing: border-box;
   }
+}
+
+.popup-out {
+  display: block;
+  -ms-overflow-x: hidden;
+  overflow-x: hidden;
+  -ms-overflow-y: auto;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 3000px;
+  right: 0;
+  z-index: 999;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.popup-bg {
+  background-color: rgba(235, 239, 249, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 3000px;
+  right: 0;
+}
+
+.popup {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  width: 660px;
+  margin: 100px auto;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  color: #FFF;
+}
+
+.popup .popup-order {
+  background-image: url(../img/bg-popup.jpg);
+  padding: 30px 80px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.popup .popup-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.popup .popup-title_big {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "MuseoSansCyrl500", Arial, Helvetica, sans-serif;
+}
+
+.popup .popup-title_big .big {
+  font-family: "MuseoSansCyrl100", Arial, Helvetica, sans-serif;
+}
+
+.popup .pupup-like {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.popup .popup-like-item {
+  float: left;
+  padding: 0 2px;
+}
+
+.popup .popup-top-link {
+  background-image: url("../img/sprite.png");
+  background-position: -10px -135px;
+  width: 10px;
+  height: 9px;
+  display: inline-block;
+}
+
+.popup .popup-top-link_active {
+  background-image: url("../img/sprite.png");
+  background-position: -235px -112px;
+  width: 10px;
+  height: 9px;
+}
+
+.popup .popup-time:before, .popup .popup-time:after {
+  content: "";
+  display: table;
+}
+
+.popup .popup-time:after {
+  clear: both;
+}
+
+.popup .popup-time-start {
+  font-size: 30px;
+  line-height: 54px;
+  margin-bottom: 10px;
+  font-family: "MuseoSansCyrl100", Arial, Helvetica, sans-serif;
+}
+
+.popup .popup-time-left {
+  display: inline-block;
+  width: 110px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.popup .popup-time-right {
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.popup .popup-time-enter {
+  font-size: 30px;
+  line-height: 54px;
+  outline: none;
+  border: none;
+  text-align: center;
+  width: 60px;
+  color: #FFF;
+  background-color: #139FB5;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-family: "MuseoSansCyrl100", Arial, Helvetica, sans-serif;
+}
+
+.popup .popup-time-enter::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.popup .popup-time-enter::-moz-placeholder {
+  color: #fff;
+}
+
+.popup .popup-time-enter:-ms-input-placeholder {
+  color: #fff;
+}
+
+.popup .popup-time-enter::placeholder {
+  color: #fff;
+}
+
+.popup .popup-action {
+  background-color: #25A1B4;
+  padding: 40px 0;
+}
+
+.popup .popup-action-cancel {
+  margin-right: 10px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.popup .popup-action-cancel:hover {
+  border-color: #b9e7ed;
+}
+
+.popup .popup-action-cancel, .popup .popup-action-end {
+  font-family: "MuseoSansCyrl100", Arial, Helvetica, sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 50px;
+  color: #B9E7ED;
+  padding: 0 25px;
+}
+
+.popup .popup-action-cancel-ico {
+  background-image: url("../img/sprite.png");
+  background-position: -55px -112px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.popup .popup-action-end {
+  border: 2px solid #b9e7ed;
+  border-radius: 3px;
+  margin-right: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.popup .popup-action-end:hover {
+  background-color: #B9E7ED;
+  color: #21a9be;
+}
+
+.popup .popup-action-end-ico {
+  background-image: url("../img/sprite.png");
+  background-position: -124px -112px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.popup .popup-end-title {
+  font-family: "MuseoSansCyrl500", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.popup .popup-end-text {
+  font-family: "MuseoSansCyrl100", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.popup-end .popup-action-end {
+  margin: 0;
+}
+
+.js-popup-open {
+  left: 0;
+}
+
+.js-popup-open .popup-bg {
+  left: 0;
 }
 
 .order {
@@ -1331,7 +1566,7 @@ body {
 .order .order-item-state.m-ok:before {
   content: "";
   background-image: url("../img/sprite.png");
-  background-position: -259px -75px;
+  background-position: -32px -112px;
   width: 18px;
   height: 18px;
   position: absolute;
@@ -1358,7 +1593,7 @@ body {
 .order .order-item-state.m-del:before {
   content: "";
   background-image: url("../img/sprite.png");
-  background-position: 0px -112px;
+  background-position: -101px -112px;
   width: 18px;
   height: 18px;
   position: absolute;
@@ -1390,7 +1625,7 @@ body {
 .order .order-add .order-add-ico {
   display: inline-block;
   background-image: url("../img/sprite.png");
-  background-position: -199px -112px;
+  background-position: -53px -135px;
   width: 8px;
   height: 8px;
 }
@@ -1408,21 +1643,21 @@ body {
 
 .star .star-active {
   background-image: url("../img/sprite.png");
-  background-position: -171px -112px;
+  background-position: -25px -135px;
   width: 10px;
   height: 9px;
 }
 
 .star .star-unnactive {
   background-image: url("../img/sprite.png");
-  background-position: -156px -112px;
+  background-position: -250px -112px;
   width: 10px;
   height: 9px;
 }
 
 .star .star-select {
   background-image: url("../img/sprite.png");
-  background-position: -90px -112px;
+  background-position: -169px -112px;
   width: 22px;
   height: 17px;
 }

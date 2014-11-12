@@ -220,6 +220,159 @@ body
 			&.m-archive
 				width: 1570px
 				box-sizing: border-box
+				
+
+
+
+
+
+//popup
+.popup-out
+	display: block
+	-ms-overflow-x: hidden
+	overflow-x: hidden
+	-ms-overflow-y: auto
+	overflow-y: auto
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 3000px
+	right: 0
+	z-index: 999
+	transition: 0.4s
+.popup-bg
+	background-color: rgba(235,239,249,0.7) 
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 3000px
+	right: 0	
+.popup
+	transform:translate(0,0)
+	width: 660px
+	margin: 100px auto
+	position: relative
+	box-sizing: border-box
+	border-radius: 5px
+	overflow: hidden
+	text-align: center
+	color: #FFF 
+	box-sizing(border-box)
+	.popup-order
+		background-image: url(../img/bg-popup.jpg)
+		padding: 30px 80px  
+		box-sizing: border-box
+		+cover
+	.popup-title
+		font-size: 18px
+		line-height: 30px
+		+osl
+	.popup-title_big
+		font-size: 24px
+		line-height: 30px
+		+bold
+		.big
+			+light
+	.pupup-like
+		display: inline-block
+		margin-bottom: 25px
+	.popup-like-item
+		float: left
+		padding: 0 2px 
+	.popup-top-link
+		+s($s-star)
+		display: inline-block
+	.popup-top-link_active
+		+s($s-star-active-2)	
+	.popup-time
+		+clr
+	.popup-time-start
+		font-size: 30px
+		line-height: 54px
+		margin-bottom: 10px
+		+light
+	.popup-time-text
+	.popup-time-left
+		display: inline-block
+		width: 110px
+		box-sizing: border-box
+		text-align: center
+	.popup-time-right
+		width: 110px
+		display: inline-block
+		text-align: center
+		box-sizing: border-box	
+	.popup-time-enter
+		font-size: 30px
+		line-height: 54px
+		outline: none
+		border: none
+		text-align: center
+		width: 60px
+		color: #FFF
+		background-color: #139FB5
+		border-radius: 3px  
+		margin-bottom: 10px
+		+light		
+		+placeholder
+			color: #fff 
+	.popup-action 
+		background-color: #25A1B4 
+		padding: 40px 0 
+	.popup-action-cancel
+		margin-right: 10px	
+		border: 2px solid transparent
+		border-radius: 3px 
+		transition: 0.3s
+		&:hover
+			border-color: #b9e7ed
+	.popup-action-cancel, .popup-action-end
+		+light 
+		display: inline-block
+		font-size: 16px
+		line-height: 50px
+		color: #B9E7ED 
+		padding: 0 25px 
+	.popup-action-cancel-ico
+		+s($s-close-popup)	
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px
+	.popup-action-end
+		border: 2px solid #b9e7ed
+		border-radius: 3px 
+		margin-right: 25px 
+		transition: 0.3s
+		&:hover
+			background-color: #B9E7ED
+			color: #21a9be  
+
+	.popup-action-end-ico	
+		+s($s-done)	
+		display: inline-block
+		margin-right: 10px
+		vertical-align: middle
+	.popup-end-title
+		+bold
+		font-size: 24px
+		line-height: 30px
+		margin-bottom: 30px
+	.popup-end-text
+		+light
+		font-size: 16px
+		line-height: 24px
+
+.popup-end
+	.popup-action-end
+		margin: 0
+
+.js-popup-open
+	left: 0	
+	.popup-bg
+		left: 0	
+		
+
+
 
 
 

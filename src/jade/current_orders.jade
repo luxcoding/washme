@@ -76,48 +76,57 @@ html
 										| 800 60 99
 									.order-item-info-tel-descr Телефон
 							.order-item-info-right
-								i.i-coffee.ico
-								i.i-wifi.ico
+								i.i-coffee.ico.js-send-popup1
+								i.i-wifi.ico.js-send-popup2
 								i.i-card.ico
 						.order-item-close
 							i.i-close
 						.order-item-succes
 							i.i-ok
-					li.order-item
-						.order-item-date
-							.order-item-date-num 26
-							.order-item-date-mount сен
-						.order-item-time
-							.order-item-time-time 22 : 30
-							.order-item-time-note начало
-						.order-item-car
-							.order-item-car-item
-								span.order-item-car-model Jaguar123123 
-								span.order-item-car-type XKR
-							.order-item-car-owner 
-								span.order-item-car-owner-name Обама Барак
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-box
-							.order-item-box-number e 007 кх 7
-							.order-item-box-title Бокс 3
-						.order-item-info
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number 
-										span.small +7 (916)
-										| 800 60 99
-									.order-item-info-tel-descr Телефон
-							.order-item-info-right
-								i.i-coffee.ico
-								i.i-wifi.ico
-								i.i-card.ico
-						.order-item-close
-							i.i-close
-						.order-item-succes
-							i.i-ok
+		.popup-out.js-popup-1
+			.popup-bg
+			.popup
+				.popup-order
+					h4.popup-title
+						| Подтверждение заказа для
+					h3.popup-title_big
+						span.big Jaguar 
+						| XKR
+					ul.pupup-like
+						li.popup-like-item
+							a.popup-top-link.popup-top-link_active(href="#")
+						li.popup-like-item
+							a.popup-top-link.popup-top-link_active(href="#")
+						li.popup-like-item
+							a.popup-top-link.popup-top-link_active(href="#")
+						li.popup-like-item
+							a.popup-top-link.popup-top-link_active(href="#")
+						li.popup-like-item
+							a.popup-top-link(href="#")
+					ul.popup-time
+						li.popup-time-left
+							.popup-time-start 22:30
+							.popup-time-text Время начала заказа
+						li.popup-time-right
+							input.popup-time-enter(placeholder="00")
+							.popup-time-text
+								|Введите номер бокса	
+				.popup-action
+					a.popup-action-cancel.js-popup-close(href="#")
+						i.popup-action-cancel-ico
+						| отменить заказ
+					a.popup-action-end(href="#")
+						i.popup-action-end-ico
+						| завершить заказ	
+		.popup-out.js-popup-2
+			.popup-bg
+			.popup.popup-end
+				.popup-order
+					h4.popup-end-title Завершите заказы
+					.popup-end-text
+						| Вы не завершили исполнение текущих заказов в установленный срок. Завершите их и сможете снова вернуться на биржу
+				.popup-action
+					a.popup-action-end(href="#")
+						| перейти к следующим записям				
+
 		script(data-headjs-load='js/init.js', src='js/lib/head.js')

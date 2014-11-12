@@ -9,11 +9,31 @@ head.ready(function() {
   indexHeight();
 
   $('.js-hide').on('click', function() {
-    $(this).parent().fadeOut();
+    $(this).parent().hide();
   });
 
   $(window).resize(function(){
     headerAbsolute();
+  });
+
+  $('.i-coffee').click(function(event) {
+    $('.js-popup-1').addClass('js-popup-open');
+    return false;
+  });
+
+  $('.i-wifi').click(function(event) {
+    $('.js-popup-2').addClass('js-popup-open');
+    return false;
+  }); 
+
+  $('.popup-bg').click(function(event) {
+    $(this).parent().removeClass('js-popup-open');
+    return false;
+  });
+
+  $('.js-popup-close').click(function(event) {
+    $(this).parents('.popup-out').removeClass('js-popup-open');
+    return false;
   });
 
 });
