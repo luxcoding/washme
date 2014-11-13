@@ -81,19 +81,47 @@ body
 			top: 0
 			right: 100%
 	.nav
-		margin-top: 24px
+		height: 69px
+		line-height: 69px
 		float: right
 		+clr
 		.nav-item
 			float: left 
-			margin-left: 75px
 		.nav-link
+			padding: 0 30px
+			display: block
 			+osl
 			transition: opacity .2s ease-in-out
+			position: relative
 			&:hover
-				.nav-text
-					background: red 
-					transition: opacity .2s ease-in-out 
+				background: #139fb7 
+				background: linear-gradient(#16a2b9 0%, #1099b5 100%)
+			&.is-active
+				background: #129eb8  
+				background-image: linear-gradient(bottom, #1798af 0%, #1099b5 100%);
+				&:before
+					content: ""
+					+s($s-arr-nav)
+					position: absolute
+					bottom: -2px
+					left: 50%
+					margin-left: -19px
+			&.m-settings
+				&.is-active 
+					.i-set
+						+s($s-set-w)
+				&:hover
+					color: #e6f9fc
+					.i-set
+						+s($s-set-w)
+			&.m-exit
+				&.is-active
+					.i-exit
+						+s($s-exit-w)
+				&:hover
+				 .i-exit
+						+s($s-exit-w)
+
 		.nav-text
 			font-size: 16px
 			color: #e6f9fc  
