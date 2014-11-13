@@ -35,6 +35,7 @@
 		border-radius: 5px
 		margin-top: 2px
 		background: #fff
+		transform: scaleY(1)
 		&:first-child
 			margin-top: 0
 	.order-item
@@ -236,6 +237,12 @@
 		.order-add-ico
 			display: inline-block
 			+s($s-plus)
+			transition: all 0.3s ease
+		&.is-active
+			background: #15ADC4
+			.order-add-ico
+				transform: rotate(45deg)
+				transition: all 0.3s ease
 
 .star 
 	.star-active, .star-unnactive, .star-select
@@ -284,6 +291,80 @@
 		.status-list-link-num
 			+osb
 
+.tarif
+	margin-bottom: 40px
+	+clr
+	.tarif-item
+		float: left
+		width: 25%
+		height: 630px
+		padding: 55px 55px 0
+		border: 2px solid #ebeff0
+		background: #FFF
+		border-radius: 5px
+		box-sizing: border-box
+		text-align: center
+		position: relative
+		&:first-child
+			margin-left: 0
+	.tarif-title
+		font-size: 28px
+		+normal
+		color: $blue3
+	.tarif-meta
+		display: none
+	.tarif-price
+		+light
+		line-height: 1
+		color: $blue2
+		.tarif-price-summ
+			font-size: 48px
+		.tarif-price-meta
+			font-size: 20px
+	.tarif-info
+		position: absolute
+		bottom: 170px
+		.tarif-info-item
+			color: $gray 
+			+osl
+		.sumbol
+			margin-right: 10px
+			+os
+			&.m-infinite
+				font-size: 40px
+			&.m-num
+				font-size: 24px
+		span
+			vertical-align: middle
+			display: inline-block
+	.tarif-bottom
+		width: 100%
+		padding: 33px 55px
+		margin: 0 -55px
+		box-sizing: border-box
+		background: #15ADC4
+		border-radius: 0 0 5px 5px
+		position: absolute
+		bottom: 0
+		.tarif-btn
+			display: block
+			padding: 15px 0
+			border: 2px solid #8ad6e2
+			+osl
+			font-size: 16px
+			transition: all 0.2s linear 0.2s
+			border-radius: 5px
+			&:hover
+				transition: all 0.2s linear 0.2s
+				background: #50BBCB
+				border-color: #50bbcb 
+
+
+
+.sexy-tooltip
+	height: 57px
+	line-height: 57px
+	background: #d5e9ed
 //	MEDIA
 // ===============================================
 // +rmin(1500)
@@ -296,3 +377,7 @@
 			// 		.order-item-info-tel-descr
 			// 			&.m-elipsis
 			// 				width: 330px
+
++r(650)
+	.popup
+		width: 94%

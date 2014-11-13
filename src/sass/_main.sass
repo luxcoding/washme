@@ -189,6 +189,8 @@ body
 	padding-top: 211px
 	&.js-set-height
 		min-height: 100px
+	&.page-mod
+		padding-top: 110px  
 	.page-in
 		@extend %wrap
 
@@ -223,12 +225,12 @@ body
 				
 
 
-
-
+html, body
+	height: 100%
 
 //popup
 .popup-out
-	display: block
+	display: none
 	-ms-overflow-x: hidden
 	overflow-x: hidden
 	-ms-overflow-y: auto
@@ -236,28 +238,25 @@ body
 	position: fixed
 	top: 0
 	bottom: 0
-	left: 3000px
+	left: 0
 	right: 0
-	z-index: 999
-	transition: 0.4s
-.popup-bg
-	background-color: rgba(235,239,249,0.7) 
-	position: fixed
-	top: 0
-	bottom: 0
-	left: 3000px
-	right: 0	
-.popup
-	transform:translate(0,0)
+	background-color: rgba(235,239,249,0.7)
+	+vertical
+	transition: opacity .3s ease-in-out
+	&.js-popup-open
+		display: block
+		z-index: 999
+
+.popup 
 	width: 660px
-	margin: 100px auto
+	display: inline-block
+	vertical-align: middle
 	position: relative
 	box-sizing: border-box
 	border-radius: 5px
 	overflow: hidden
 	text-align: center
 	color: #FFF 
-	box-sizing(border-box)
 	.popup-order
 		background-image: url(../img/bg-popup.jpg)
 		padding: 30px 80px  
@@ -303,8 +302,8 @@ body
 		text-align: center
 		box-sizing: border-box	
 	.popup-time-enter
+		padding: 9px 0
 		font-size: 30px
-		line-height: 54px
 		outline: none
 		border: none
 		text-align: center
@@ -346,7 +345,6 @@ body
 		&:hover
 			background-color: #B9E7ED
 			color: #21a9be  
-
 	.popup-action-end-ico	
 		+s($s-done)	
 		display: inline-block
@@ -361,16 +359,17 @@ body
 		+light
 		font-size: 16px
 		line-height: 24px
+ 
+.animated
+	&.s1-5
+		animation-duration: 1.5s
+	&.s2
+		animation-duration: 2s
 
-.popup-end
-	.popup-action-end
-		margin: 0
+.asd
+	position: relative
+	z-index: 999
 
-.js-popup-open
-	left: 0	
-	.popup-bg
-		left: 0	
-		
 
 
 

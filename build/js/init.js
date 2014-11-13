@@ -2,5 +2,9 @@ head.load(
 	"js/lib/jquery.js",
 	"js/lib/iscroll.js",
 	"js/lib/jquery.mCustomScrollbar.concat.min.js",
-	"js/common.js"
+	"js/lib/jquery.jgfeed.js",
+	"js/lib/prettify.js",
+	"js/lib/lang-css.js",
+	"js/lib/jquery.tooltipster.min.js",
+	"js/common.js" 
 );

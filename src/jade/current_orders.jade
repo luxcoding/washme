@@ -46,7 +46,7 @@ html
 		.page
 			.page-in
 				ul.order
-					li.order-item
+					li.order-item.bounceInLeft.animated
 						.order-item-date
 							.order-item-date-num 26
 							.order-item-date-mount сен
@@ -78,14 +78,13 @@ html
 							.order-item-info-right
 								i.i-coffee.ico.js-send-popup1
 								i.i-wifi.ico.js-send-popup2
-								i.i-card.ico
+								i.i-card.ico.js-tooltipster(title="<div class='asd'><i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i></div>")
 						.order-item-close
 							i.i-close
 						.order-item-succes
 							i.i-ok
-		.popup-out.js-popup-1
-			.popup-bg
-			.popup
+		.popup-out.animated.js-popup-1
+			.popup.animated
 				.popup-order
 					h4.popup-title
 						| Подтверждение заказа для
@@ -118,15 +117,14 @@ html
 					a.popup-action-end(href="#")
 						i.popup-action-end-ico
 						| завершить заказ	
-		.popup-out.js-popup-2
-			.popup-bg
-			.popup.popup-end
+		.popup-out.animated.js-popup-2
+			.popup.animated
 				.popup-order
 					h4.popup-end-title Завершите заказы
 					.popup-end-text
 						| Вы не завершили исполнение текущих заказов в установленный срок. Завершите их и сможете снова вернуться на биржу
 				.popup-action
-					a.popup-action-end(href="#")
+					a.popup-action-end.js-popup-close(href="#")
 						| перейти к следующим записям				
 
 		script(data-headjs-load='js/init.js', src='js/lib/head.js')
