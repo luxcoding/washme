@@ -301,12 +301,21 @@
 		padding: 55px 55px 0
 		border: 2px solid #ebeff0
 		background: #FFF
-		border-radius: 5px
+		border-radius: 10px
 		box-sizing: border-box
 		text-align: center
 		position: relative
 		&:first-child
 			margin-left: 0
+		&.is-active
+			background: url("../img/tarif-active.jpg")
+			.tarif-meta
+				display: block
+				color: $lgray 
+			.tarif-title, .tarif-price, .tarif-info-item
+				color: #FFF 
+			.rub
+				+s($s-rub-w)
 	.tarif-title
 		font-size: 28px
 		+normal
@@ -314,11 +323,22 @@
 	.tarif-meta
 		display: none
 	.tarif-price
+		width: 200px
+		height: 68px
+		position: absolute
+		top: 200px
+		left: 50%
+		margin-left: -100px
 		+light
 		line-height: 1
 		color: $blue2
-		.tarif-price-summ
+		.tarif-price-summ 
 			font-size: 48px
+			span
+				margin-top: 3px
+				margin-right: 15px
+				display: inline-block
+				vertical-align: middle
 		.tarif-price-meta
 			font-size: 20px
 	.tarif-info
@@ -339,11 +359,11 @@
 			display: inline-block
 	.tarif-bottom
 		width: 100%
-		padding: 33px 55px
+		padding: 33px 35px
 		margin: 0 -55px
 		box-sizing: border-box
 		background: #15ADC4
-		border-radius: 0 0 5px 5px
+		border-radius: 0 0 10px 10px
 		position: absolute
 		bottom: 0
 		.tarif-btn
@@ -360,6 +380,10 @@
 				border-color: #50bbcb 
 
 
+.rub
+	+s($s-rub)
+	display: inline-block
+	vertical-align: middle
 
 .sexy-tooltip
 	height: 57px
@@ -378,6 +402,10 @@
 			// 			&.m-elipsis
 			// 				width: 330px
 
++rmin(1600)
+	.tarif
+		.tarif-bottom
+			padding: 33px 55px 
 +r(650)
 	.popup
 		width: 94%

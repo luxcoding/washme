@@ -3363,85 +3363,85 @@ Copyright (c) 2014 Daniel Eden
 
 .i-set {
   background-image: url("../img/sprite.png");
-  background-position: 0px -150px;
+  background-position: -84px -150px;
   width: 17px;
   height: 17px; }
 
 .i-exit {
   background-image: url("../img/sprite.png");
-  background-position: -147px -112px;
+  background-position: -241px -116px;
   width: 17px;
   height: 18px; }
 
 .i-coffee {
   background-image: url("../img/sprite.png");
-  background-position: -122px -75px;
+  background-position: -81px -75px;
   width: 31px;
   height: 32px; }
 
 .i-coffee-bl {
   background-image: url("../img/sprite.png");
-  background-position: -86px -75px;
+  background-position: -226px -75px;
   width: 31px;
   height: 32px; }
 
 .i-wifi {
   background-image: url("../img/sprite.png");
-  background-position: -229px -75px;
+  background-position: -20px -116px;
   width: 33px;
   height: 28px; }
 
 .i-wifi-bl {
   background-image: url("../img/sprite.png");
-  background-position: -10px -112px;
+  background-position: -58px -116px;
   width: 33px;
   height: 28px; }
 
 .i-card {
   background-image: url("../img/sprite.png");
-  background-position: -86px -112px;
+  background-position: -96px -116px;
   width: 33px;
   height: 24px; }
 
 .i-card-bl {
   background-image: url("../img/sprite.png");
-  background-position: -48px -112px;
+  background-position: -134px -116px;
   width: 33px;
   height: 24px; }
 
 .i-close {
   background-image: url("../img/sprite.png");
-  background-position: -124px -112px;
+  background-position: -172px -116px;
   width: 18px;
   height: 18px; }
 
 .i-ok {
   background-image: url("../img/sprite.png");
-  background-position: -192px -112px;
+  background-position: -218px -116px;
   width: 18px;
   height: 18px; }
 
 .i-basket {
   background-image: url("../img/sprite.png");
-  background-position: -191px -75px;
+  background-position: 0px -150px;
   width: 33px;
   height: 30px; }
 
 .i-sofa {
   background-image: url("../img/sprite.png");
-  background-position: -10px -75px;
+  background-position: -117px -75px;
   width: 33px;
   height: 32px; }
 
 .i-gas-station {
   background-image: url("../img/sprite.png");
-  background-position: -158px -75px;
+  background-position: -193px -75px;
   width: 28px;
   height: 32px; }
 
 .i-settings {
   background-image: url("../img/sprite.png");
-  background-position: -48px -75px;
+  background-position: -155px -75px;
   width: 33px;
   height: 32px; }
 
@@ -3615,7 +3615,7 @@ body {
     .top .top-status:before {
       content: "";
       background-image: url("../img/sprite.png");
-      background-position: -49px -150px;
+      background-position: -133px -150px;
       width: 34px;
       height: 10px;
       position: absolute;
@@ -3734,13 +3734,13 @@ html, body {
     padding: 0 2px; }
   .popup .popup-top-link {
     background-image: url("../img/sprite.png");
-    background-position: -103px -150px;
+    background-position: -187px -150px;
     width: 10px;
     height: 9px;
     display: inline-block; }
   .popup .popup-top-link_active {
     background-image: url("../img/sprite.png");
-    background-position: -133px -150px;
+    background-position: -217px -150px;
     width: 10px;
     height: 9px; }
   .popup .popup-time:before, .popup .popup-time:after {
@@ -3803,7 +3803,7 @@ html, body {
     padding: 0 25px; }
   .popup .popup-action-cancel-ico {
     background-image: url("../img/sprite.png");
-    background-position: -238px -112px;
+    background-position: -61px -150px;
     width: 18px;
     height: 18px;
     display: inline-block;
@@ -3820,7 +3820,7 @@ html, body {
       color: #21a9be; }
   .popup .popup-action-end-ico {
     background-image: url("../img/sprite.png");
-    background-position: -169px -112px;
+    background-position: -195px -116px;
     width: 18px;
     height: 18px;
     display: inline-block;
@@ -4069,7 +4069,7 @@ html, body {
       .order .order-item-state.m-ok:before {
         content: "";
         background-image: url("../img/sprite.png");
-        background-position: -192px -112px;
+        background-position: -218px -116px;
         width: 18px;
         height: 18px;
         position: absolute;
@@ -4090,7 +4090,7 @@ html, body {
       .order .order-item-state.m-del:before {
         content: "";
         background-image: url("../img/sprite.png");
-        background-position: -215px -112px;
+        background-position: -38px -150px;
         width: 18px;
         height: 18px;
         position: absolute;
@@ -4116,7 +4116,7 @@ html, body {
     .order .order-add .order-add-ico {
       display: inline-block;
       background-image: url("../img/sprite.png");
-      background-position: -148px -150px;
+      background-position: -232px -150px;
       width: 8px;
       height: 8px;
       -webkit-transition: all 0.3s ease;
@@ -4139,17 +4139,17 @@ html, body {
     margin-left: 0; }
 .star .star-active {
   background-image: url("../img/sprite.png");
-  background-position: -118px -150px;
+  background-position: -202px -150px;
   width: 10px;
   height: 9px; }
 .star .star-unnactive {
   background-image: url("../img/sprite.png");
-  background-position: -88px -150px;
+  background-position: -172px -150px;
   width: 10px;
   height: 9px; }
 .star .star-select {
   background-image: url("../img/sprite.png");
-  background-position: -22px -150px;
+  background-position: -106px -150px;
   width: 22px;
   height: 17px; }
 
@@ -4205,12 +4205,24 @@ html, body {
     padding: 55px 55px 0;
     border: 2px solid #ebeff0;
     background: #FFF;
-    border-radius: 5px;
+    border-radius: 10px;
     box-sizing: border-box;
     text-align: center;
     position: relative; }
     .tarif .tarif-item:first-child {
       margin-left: 0; }
+    .tarif .tarif-item.is-active {
+      background: url("../img/tarif-active.jpg"); }
+      .tarif .tarif-item.is-active .tarif-meta {
+        display: block;
+        color: #d5e9ed; }
+      .tarif .tarif-item.is-active .tarif-title, .tarif .tarif-item.is-active .tarif-price, .tarif .tarif-item.is-active .tarif-info-item {
+        color: #FFF; }
+      .tarif .tarif-item.is-active .rub {
+        background-image: url("../img/sprite.png");
+        background-position: -51px -75px;
+        width: 25px;
+        height: 36px; }
   .tarif .tarif-title {
     font-size: 28px;
     font-family: "MuseoSansCyrl300", Arial, Helvetica, sans-serif;
@@ -4218,11 +4230,22 @@ html, body {
   .tarif .tarif-meta {
     display: none; }
   .tarif .tarif-price {
+    width: 200px;
+    height: 68px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -100px;
     font-family: "MuseoSansCyrl100", Arial, Helvetica, sans-serif;
     line-height: 1;
     color: #15adc4; }
     .tarif .tarif-price .tarif-price-summ {
       font-size: 48px; }
+      .tarif .tarif-price .tarif-price-summ span {
+        margin-top: 3px;
+        margin-right: 15px;
+        display: inline-block;
+        vertical-align: middle; }
     .tarif .tarif-price .tarif-price-meta {
       font-size: 20px; }
   .tarif .tarif-info {
@@ -4247,11 +4270,11 @@ html, body {
       display: inline-block; }
   .tarif .tarif-bottom {
     width: 100%;
-    padding: 33px 55px;
+    padding: 33px 35px;
     margin: 0 -55px;
     box-sizing: border-box;
     background: #15ADC4;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
     position: absolute;
     bottom: 0; }
     .tarif .tarif-bottom .tarif-btn {
@@ -4271,10 +4294,22 @@ html, body {
         background: #50BBCB;
         border-color: #50bbcb; }
 
+.rub {
+  background-image: url("../img/sprite.png");
+  background-position: -20px -75px;
+  width: 26px;
+  height: 36px;
+  display: inline-block;
+  vertical-align: middle; }
+
 .sexy-tooltip {
   height: 57px;
   line-height: 57px;
   background: #d5e9ed; }
+
+@media only screen and (min-width: 1600px) {
+  .tarif .tarif-bottom {
+    padding: 33px 55px; } }
 
 @media only screen and (max-width: 650px) {
   .popup {
