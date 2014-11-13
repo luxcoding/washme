@@ -633,13 +633,15 @@ button[disabled], html input[disabled] {
 
 /* This is the base styling required to make all Tooltipsters work */
 .tooltipster-base {
+  max-width: 300px;
+  color: #29647A;
   padding: 0;
   font-size: 0;
   line-height: 0;
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 9999;
+  z-index: 9;
   width: auto;
   overflow: visible; }
 
@@ -3548,9 +3550,13 @@ body {
     .topper .nav .nav-link {
       font-family: "Open Sans", sans-serif;
       font-weight: 300;
-      font-style: normal; }
+      font-style: normal;
+      -webkit-transition: opacity 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in-out; }
       .topper .nav .nav-link:hover .nav-text {
-        text-decoration: underline; }
+        opacity: 0.8;
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out; }
     .topper .nav .nav-text {
       font-size: 16px;
       color: #e6f9fc; }
@@ -3625,7 +3631,13 @@ body {
   .top .top-link {
     font-family: "MuseoSansCyrl100", Arial, Helvetica, sans-serif;
     font-size: 28px;
-    color: #7fd2df; }
+    color: #7fd2df;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out; }
+    .top .top-link:hover {
+      opacity: 0.8;
+      -webkit-transition: opacity 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in-out; }
     .top .top-link.is-sexy {
       color: #29647a; }
       .top .top-link.is-sexy .top-link-num {
@@ -4073,7 +4085,6 @@ html, body {
         width: 18px;
         height: 18px;
         position: absolute;
-        top: 50%;
         left: 50%;
         margin-top: -9px;
         margin-left: -9px; }
@@ -4094,7 +4105,6 @@ html, body {
         width: 18px;
         height: 18px;
         position: absolute;
-        top: 50%;
         left: 50%;
         margin-top: -9px;
         margin-left: -9px; }
@@ -4134,9 +4144,15 @@ html, body {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
   .star .star-active:first-child, .star .star-unnactive:first-child, .star .star-select:first-child {
     margin-left: 0; }
+  .star .star-active:hover, .star .star-unnactive:hover, .star .star-select:hover {
+    opacity: 0.8;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
 .star .star-active {
   background-image: url("../img/sprite.png");
   background-position: -258px -116px;

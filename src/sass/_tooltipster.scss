@@ -36,13 +36,15 @@
 
 /* This is the base styling required to make all Tooltipsters work */
 .tooltipster-base {
+	max-width: 300px;
+	color: #29647A;
 	padding: 0;
 	font-size: 0;
 	line-height: 0;
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: 9999;
+	z-index: 9;
 	// pointer-events: none;
 	width: auto;
 	overflow: visible;

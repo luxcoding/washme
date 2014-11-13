@@ -5,6 +5,6 @@ head.load(
 	"js/lib/jquery.jgfeed.js",
 	"js/lib/prettify.js",
 	"js/lib/lang-css.js",
-	"js/lib/jquery.tooltipster.min.js",
+	"js/lib/jquery.tooltipster.js",
 	"js/common.js" 
 );

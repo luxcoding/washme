@@ -42,19 +42,20 @@ $('.popup').on('click', function(e) {
   });
 
   // order active
-  $('.order-add').click(function(event){
+  $('.order-add').on('click', function(e) {
     if ($(this).hasClass('is-active')) {
       $(this).removeClass('is-active');
     }
     else {
-      $('.order-add').removeClass('is-active');
       $(this).addClass('is-active');
+      e.stopPropagation();
     };
-    event.stopPropagation();
   });
 
   $(document).click(function() {
-    $('.order-add').removeClass('is-active');
+    if ($('.order-add').hasClass('is-active')) {
+      $('.order-add').removeClass('is-active');
+    }
   });
 
   // tooltip
@@ -63,6 +64,11 @@ $('.popup').on('click', function(e) {
     position: 'bottom',
     contentAsHTML: true
   });
+
+
+
+
+  $('.js-tooltipster-hover').tooltipster();
 
   $(window).keypress(function() {
     $('.js-tooltipster').tooltipster('hide');

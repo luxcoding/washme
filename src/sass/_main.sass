@@ -89,9 +89,12 @@ body
 			margin-left: 75px
 		.nav-link
 			+osl
+			transition: opacity .2s ease-in-out
 			&:hover
 				.nav-text
-					text-decoration: underline		 
+					// text-decoration: underline
+					opacity: 0.8
+					transition: opacity .2s ease-in-out 
 		.nav-text
 			font-size: 16px
 			color: #e6f9fc  
@@ -165,6 +168,10 @@ body
 		+light
 		font-size: 28px
 		color: $blue1
+		transition: opacity .2s ease-in-out
+		&:hover
+			opacity: 0.8
+			transition: opacity .2s ease-in-out
 		&.is-sexy
 			color: $blue3
 			.top-link-num
