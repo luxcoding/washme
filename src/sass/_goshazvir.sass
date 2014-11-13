@@ -258,6 +258,17 @@
 		+s($s-star-unnactive)
 	.star-select
 		+s($s-star-select)
+	.star-summ
+		display: inline-block
+		height: 18px
+		line-height: 18px
+		border-radius: 9px
+		padding: 0 7px
+		margin-left: 6px
+		background: #15ADC4 
+		font-size: 10px
+		+osl
+		color: #FFF 
 
 .status-list
 	width: 100%
@@ -389,6 +400,211 @@
 	height: 57px
 	line-height: 57px
 	background: #d5e9ed
+
+.grid
+	margin-bottom: 40px
+	.grid-row
+		margin-bottom: 2px
+		+clr
+	.grid-cell
+		width: 33.333%
+		height: 370px
+		padding: 0 30px
+		float: left
+		border-left: 2px solid #eff2f3
+		background: #FFF 
+		box-sizing: border-box
+		text-align: center
+		&:first-child
+		 border-left: #000 
+	.grid-content
+		width: 100%
+		height: 100%
+		display: table
+		.grid-content-in
+			display: table-cell
+			vertical-align: middle
+.wash
+	.wash-logo
+		margin-bottom: 20px
+		display: inline-block
+		width: 90px
+		height: 90px
+		border-radius: 50%
+		border: 10px solid #eef1f3
+		+cover
+	.wash-my-title
+		margin-bottom: 10px
+		color: $blue3
+		font-size: 24px
+		+normal
+	.wash-stars
+		margin-bottom: 50px
+	.wash-my-red
+		display: inline-block
+		padding: 7px 15px
+		color: $gray
+		+osl
+		border: 2px solid #eceff1
+		border-radius: 3px
+		transition: all 0.2s linear 0.2s
+		&:hover
+			color: $gray
+			background: #eceff1
+			transition: all 0.2s linear 0.2s
+
+.wash-map
+	margin: 0 -30px
+	height: 370px
+
+.wash-contacts
+	.wash-contacts-item
+		margin-top: 30px
+		&:first-child
+			margin-top: 0
+		.wash-contacts-meta
+			color: $blue3
+			font-size: 20px
+			+light
+			.small
+				font-size: 16px
+		.wash-contacts-detail
+			color: $gray
+			+osl
+
+.wash-option
+	.wash-option-meta
+		margin-bottom: 20px
+		font-size: 16px
+		color: $gray 
+		+osl
+	.wash-option-label
+		margin-bottom: 30px
+		font-size: 0
+	.wash-option-note
+		.wash-option-note-title
+			color: $blue3
+			font-size: 20px 
+		.wash-option-meta
+			+osl
+			color: $gray
+
+.wash-plan
+	.wash-plan-topper
+		margin-bottom: 25px
+	.wash-plan-title
+		margin-bottom: 5px
+		+normal
+		font-size: 24px
+		color: $blue3 
+	.wash-plan-meta
+		color: $gray
+		+osl 
+	.wash-plan-price
+		margin-bottom: 30px
+		font-size: 36px
+		color: $blue2
+		+light
+		.price
+			+s($s-rub)
+			display: inline-block
+		.summ
+			font-size: 48px
+		.meta
+			font-size: 24px
+	.wash-plan-item
+		color: $gray
+		+osl 
+		.infinite
+			margin-right: 10px
+			font-size: 40px
+			+os
+		.num
+			margin-right: 10px
+			font-size: 24px
+		span
+			display: inline-block
+			vertical-align: middle
+	.wash-plan-btn
+		margin-top: 20px
+		display: inline-block
+		padding: 15px 40px
+		border: 2px solid #8ad6e1
+		border-radius: 3px
+		color: $blue2
+		color: $blue2
+		+osl
+		text-align: center
+		transition: all 0.2s linear 0.2s
+		&:hover
+			color: #FFF
+			background: $blue2
+			border-color: $blue2
+			transition: all 0.2s linear 0.2s
+
+.wash-pass
+	.wash-pass-title
+		margin-bottom: 25px
+		color: $gray
+		font-size: 16px
+		+osl 
+	.wash-pass-input
+		display: block
+		width: 100%
+		height: 52px
+		padding: 10px
+		margin-top: 2px
+		background: #F5F7F8
+		outline: none
+		border: 0
+		border-radius: 5px
+		box-sizing: border-box
+		text-align: center
+		color: #9FA3A4
+		+osl
+		+placeholder
+			color: #9FA3A4
+			+osl
+		&:focus
+			+placeholder
+				color: transparent 
+	.wash-pass-btn
+		margin-top: 54px
+		display: block
+		padding: 15px
+		border: 2px solid #8ad6e1
+		border-radius: 3px
+		color: #8ad6e1
+		transition: all 0.2s linear 0.2s
+		&:hover
+			color: #FFF
+			background: $blue2
+			border-color: $blue2
+			transition: all 0.2s linear 0.2s
+.label
+	height: 56px
+	line-height: 56px
+	padding: 0 20px
+	display: inline-block
+	background: #F5F7F8 
+	margin-left: 1px
+	margin-bottom: 1px
+	cursor: pointer
+	.ico
+		margin-right: 10px
+		display: inline-block
+		vertical-align: middle
+	.label-descr
+		display: inline-block
+		vertical-align: middle
+		font-size: 15px
+		+osl
+		color: $gray 
+
+.place-card
+	display: none
+.login-control
+	display: none
 //	MEDIA
 // ===============================================
 // +rmin(1500)
