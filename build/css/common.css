@@ -3625,7 +3625,7 @@ body {
       width: 34px;
       height: 10px;
       position: absolute;
-      bottom: -10px;
+      bottom: -9px;
       left: 50%;
       margin-left: -17px; }
   .top .top-link {
@@ -3932,6 +3932,7 @@ html, body {
       font-size: 12px;
       font-family: "MuseoSansCyrl100", Arial, Helvetica, sans-serif; }
   .order .order-item-time {
+    width: 105px;
     height: 106px;
     background: url("../img/time-bg.png");
     background-repeat: no-repeat;
@@ -4043,22 +4044,26 @@ html, body {
   .order .order-item-close {
     width: 26px;
     padding: 0 15px;
+    background: #eef1f1;
     background: -webkit-linear-gradient(#eef1f1 0%, #f5f7f7 100%);
     background: linear-gradient(#eef1f1 0%, #f5f7f7 100%);
     text-align: center;
     cursor: pointer; }
     .order .order-item-close:hover {
+      background: #f5f7f7;
       background: -webkit-linear-gradient(#eef1f1 0%, #eef1f1 100%);
       background: linear-gradient(#eef1f1 0%, #eef1f1 100%); }
   .order .order-item-succes {
     width: 26px;
     padding: 0 15px;
+    background: #1099b5;
     background: -webkit-linear-gradient(#1099b5 0%, #15adc4 100%);
     background: linear-gradient(#1099b5 0%, #15adc4 100%);
     text-align: center;
     border-radius: 0 5px 5px 0;
     cursor: pointer; }
     .order .order-item-succes:hover {
+      background: #15adc4;
       background: -webkit-linear-gradient(#1098b5 0%, #1098b5 100%);
       background: linear-gradient(#1098b5 0%, #1098b5 100%); }
   .order .order-item-state {
@@ -4345,6 +4350,12 @@ html, body {
       display: table; }
     .grid .grid-row:after {
       clear: both; }
+    .grid .grid-row.m-first {
+      border-radius: 5px 5px 0 0;
+      overflow: hidden; }
+    .grid .grid-row.m-last {
+      border-radius: 0 0 5px 5px;
+      overflow: hidden; }
   .grid .grid-cell {
     width: 33.333%;
     height: 370px;
@@ -4412,7 +4423,14 @@ html, body {
     color: #9FA3A4;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    font-style: normal; }
+    font-style: normal;
+    -webkit-transition: all 0.2s linear 0.2s;
+    transition: all 0.2s linear 0.2s; }
+  .wash-red:hover {
+    color: #9fa3a4;
+    background: #eceff1;
+    -webkit-transition: all 0.2s linear 0.2s;
+    transition: all 0.2s linear 0.2s; }
 
 .wash-my-save {
   display: none;
@@ -4428,10 +4446,15 @@ html, body {
   transition: all 0.2s linear 0.2s; }
   .wash-my-save.is-active {
     display: inline-block; }
+  .wash-my-save:hover {
+    opacity: 0.8;
+    -webkit-transition: all 0.2s linear 0.2s;
+    transition: all 0.2s linear 0.2s; }
 
 .wash-map {
   margin: 0 -30px;
-  height: 370px; }
+  height: 370px;
+  overflow: hidden; }
 
 .wash-contacts .wash-contacts-item {
   margin-top: 30px; }
@@ -4560,6 +4583,7 @@ html, body {
   display: block;
   width: 100%;
   height: 52px;
+  line-height: 32px;
   padding: 10px;
   margin-top: 2px;
   background: #F5F7F8;
@@ -4607,6 +4631,7 @@ html, body {
   padding: 0 20px;
   display: inline-block;
   background: #F5F7F8;
+  border-radius: 5px;
   margin-left: 1px;
   margin-bottom: 1px;
   cursor: pointer; }
@@ -4683,6 +4708,14 @@ html, body {
     background-position: -211px -116px;
     width: 19px;
     height: 19px; }
+
+.wash-map {
+  overflow: hidden; }
+
+#map-mini {
+  width: 100%;
+  height: 112%;
+  border-radius: 0 5px 0 0; }
 
 @media only screen and (min-width: 1600px) {
   .tarif .tarif-bottom {

@@ -70,6 +70,7 @@
 			font-size: 12px
 			+light
 	.order-item-time
+		width: 105px
 		height: 106px 
 		background: url("../img/time-bg.png")
 		+cover
@@ -168,19 +169,23 @@
 	.order-item-close
 		width: 26px
 		padding: 0 15px
+		background: #eef1f1 
 		background: linear-gradient(#eef1f1 0%, #f5f7f7 100%)
 		text-align: center
 		cursor: pointer
 		&:hover
+			background: #f5f7f7 
 			background: linear-gradient(#eef1f1 0%, #eef1f1 100%)
 	.order-item-succes
 		width: 26px
 		padding: 0 15px
+		background: #1099b5 
 		background: linear-gradient(#1099b5 0%, #15adc4 100%)
 		text-align: center
 		border-radius: 0 5px 5px 0
 		cursor: pointer
 		&:hover
+			background: #15adc4 
 			background: linear-gradient(#1098b5 0%, #1098b5 100%)
 	.order-item-state
 		width: 26px
@@ -410,6 +415,12 @@
 	.grid-row
 		margin-bottom: 2px
 		+clr
+		&.m-first
+			border-radius: 5px 5px 0 0
+			overflow: hidden
+		&.m-last
+			border-radius: 0 0 5px 5px
+			overflow: hidden
 	.grid-cell
 		width: 33.333%
 		height: 370px
@@ -469,7 +480,12 @@
 		border-radius: 3px
 		font-size: 16px
 		color: #9FA3A4
-		+osl 
+		+osl
+		transition: all 0.2s linear 0.2s
+	&:hover
+		color: $gray
+		background: #eceff1
+		transition: all 0.2s linear 0.2s
 .wash-my-save
 	display: none
 	padding: 7px 15px
@@ -481,10 +497,14 @@
 	transition: all 0.2s linear 0.2s
 	&.is-active
 		display: inline-block
+	&:hover
+		opacity: 0.8
+		transition: all 0.2s linear 0.2s
 
 .wash-map
 	margin: 0 -30px
 	height: 370px
+	overflow: hidden
 
 .wash-contacts
 	.wash-contacts-item
@@ -595,6 +615,7 @@
 	display: block
 	width: 100%
 	height: 52px
+	line-height: 32px
 	padding: 10px
 	margin-top: 2px
 	background: #F5F7F8
@@ -617,7 +638,8 @@
 	line-height: 56px
 	padding: 0 20px
 	display: inline-block
-	background: #F5F7F8 
+	background: #F5F7F8
+	border-radius: 5px
 	margin-left: 1px
 	margin-bottom: 1px
 	cursor: pointer
@@ -683,6 +705,12 @@
 		.checkbox-ico
 			+s($s-ch-a)
 
+.wash-map
+	overflow: hidden
+#map-mini
+	width: 100%
+	height: 112% 
+	border-radius: 0 5px 0 0
 //	MEDIA
 // ===============================================
 // +rmin(1500)

@@ -64,16 +64,18 @@ $('.popup').on('click', function(e) {
     position: 'bottom',
     contentAsHTML: true
   });
-
-
-
-
-  $('.js-tooltipster-hover').tooltipster();
-
   $(window).keypress(function() {
     $('.js-tooltipster').tooltipster('hide');
      $('.order-add').removeClass('is-active');
   });
+
+  $('.js-tooltipster-hover').tooltipster({
+    trigger: 'hover',
+    position: 'bottom',
+    interactive: true,
+    contentAsHTML: true
+  });
+
 
   $('.js-send-red').on('click', function() {
     $('.wash-contacts-info').hide();
@@ -101,7 +103,15 @@ $('.popup').on('click', function(e) {
   $(window).resize(function(){
     headerAbsolute();
   });
+
+  $(function() {
+   $('.wash-input').placeholder();
+  });  
+
 });
+
+
+
 
 function headerAbsolute() {
   if ($(window).width() <= 1330) {

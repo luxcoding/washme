@@ -6,5 +6,6 @@ head.load(
 	"js/lib/prettify.js",
 	"js/lib/lang-css.js",
 	"js/lib/jquery.tooltipster.js",
+	"js/lib/jquery.placeholder.js",
 	"js/common.js" 
 );
