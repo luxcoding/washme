@@ -102,6 +102,7 @@ $('.popup').on('click', function(e) {
   // resize
   $(window).resize(function(){
     headerAbsolute();
+    indexHeight();
   });
 
   $(function() {
