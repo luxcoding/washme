@@ -45,28 +45,35 @@ html
 													i.star-active
 													i.star-active
 													i.star-active
-													i.star-unnactive
+													i.star-unnactive 
 													i.star-summ 26
-											a(href="#").wash-my-red Редактировать
-										.wash-red(style="display: none;")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque praesentium impedit, quaerat veniam? Hic aspernatur fugiat dignissimos nemo, ullam nam eveniet odit vel. Reprehenderit itaque, placeat eveniet illum laboriosam quod!
+										a.wash-red(href="#") Изменить лого 
+										a(href="#").wash-my-red.js-send-red Редактировать
+										a(href="#").wash-my-save.js-send-save Сохранить
 						.grid-cell
 							.grid-content
 								.grid-content-in
 									.wash-contacts
-										.wash-contacts-item
-											.wash-contacts-meta Ул. Шверника 19
-											.wash-contacts-detail адрес
-										.wash-contacts-item
-											.wash-contacts-meta support@avtospa.ru
-											.wash-contacts-detail e-mail
-										.wash-contacts-item
-											.wash-contacts-meta
-												span.small +7 (916) 
-												span 800 60 99
-											.wash-contacts-detail телефон
-										.wash-contacts-item
-											.wash-contacts-meta 07 : 00 – 01 : 00
-											.wash-contacts-detail часы работы
+										.wash-contacts-info(style="display: block;")
+											.wash-contacts-item
+												.wash-contacts-meta Ул. Шверника 19
+												.wash-contacts-detail адрес
+											.wash-contacts-item
+												.wash-contacts-meta support@avtospa.ru
+												.wash-contacts-detail e-mail
+											.wash-contacts-item
+												.wash-contacts-meta
+													span.small +7 (916) 
+													span 800 60 99
+												.wash-contacts-detail телефон
+											.wash-contacts-item
+												.wash-contacts-meta 07 : 00 – 01 : 00
+												.wash-contacts-detail часы работы
+										.wash-contacts-red(style="display: none;")
+											input.wash-input(type="text" placeholder="Адрес")
+											input.wash-input(type="text" placeholder="E-mail")
+											input.wash-input(type="text" placeholder="Телефон")
+											input.wash-input(type="text" placeholder="Часы работы")
 						.grid-cell
 							.grid-content
 								.grid-content-in
@@ -78,25 +85,101 @@ html
 								.grid-content-in
 									.wash-option
 										.wash-option-meta Дополнительные опции
-										.wash-option-label
-											.label
-												i.i-card.ico
-												.label-descr Оплата картой
-											.label
-												i.i-wifi.ico
-												.label-descr Wi-Fi
-											.label
-												i.i-coffee.ico
-												.label-descr Кафе
-											.label
-												i.i-sofa.ico
-												.label-descr Комната отдыха
-											.label
-												i.i-settings.ico
-												.label-descr Шиномонтаж
-										.wash-option-note
-											.wash-option-note-title Ручная, Самообслуживание
-											.wash-option-meta тип мойки
+										.wash-option-active(style="display: block;")
+											.wash-option-label
+												.label
+													i.i-card.ico
+													.label-descr Оплата картой
+												.label
+													i.i-wifi.ico
+													.label-descr Wi-Fi
+												.label
+													i.i-coffee.ico
+													.label-descr Кафе
+												.label
+													i.i-sofa.ico
+													.label-descr Комната отдыха
+												.label
+													i.i-settings.ico
+													.label-descr Шиномонтаж
+											.wash-option-note
+												.wash-option-note-title Ручная, Самообслуживание
+												.wash-option-meta тип мойки
+										.wash-option-readme(style="display: none;")
+											.ch-wrap
+												.ch-col
+													.ch-row
+														label.checkbox
+															input(type='checkbox', value='', checked)
+															span
+																| Оплата картой
+																i.checkbox-ico
+													.ch-row
+														label.checkbox
+															input(type='checkbox', value='', checked)
+															span
+																| Кафе
+																i.checkbox-ico
+													.ch-row
+														label.checkbox
+															input(type='checkbox', value='', checked)
+															span
+																| Wi-fi
+																i.checkbox-ico
+													.ch-row
+														label.checkbox
+															input(type='checkbox', value='')
+															span
+																| Комната отдыха
+																i.checkbox-ico
+												.ch-col
+													.ch-row
+														label.checkbox
+															input(type='checkbox', value='')
+															span
+																| Шиномонтаж
+																i.checkbox-ico
+													.ch-row
+														label.checkbox
+															input(type='checkbox', value='', checked)
+															span
+																| Магазин
+																i.checkbox-ico
+													.ch-row
+														label.checkbox
+															input(type='checkbox', value='')
+															span
+																| Заправка
+																i.checkbox-ico 
+											.ch-wrap
+												.ch-title Тип мойки
+												.ch-col
+													.ch-row
+														label.checkbox
+															input(type='checkbox', value='', checked)
+															span
+																| Ручная
+																i.checkbox-ico
+													.ch-row
+														label.checkbox
+															input(type='checkbox', value='', checked)
+															span
+																| Самообслуживание
+																i.checkbox-ico 
+												.ch-col
+													.ch-row
+														label.checkbox
+															input(type='checkbox', value='')
+															span
+																| Мобильная
+																i.checkbox-ico
+													.ch-row
+														label.checkbox
+															input(type='checkbox', value='')
+															span
+																| Автоматическая
+																i.checkbox-ico 
+
 						.grid-cell
 							.grid-content
 								.grid-content-in
@@ -120,9 +203,9 @@ html
 								.grid-content-in
 									.wash-pass
 										.wash-pass-title Изменить пароль
-										input.wash-pass-input(type="text" placeholder="Старый пароль")
-										input.wash-pass-input(type="text" placeholder="Новый пароль")
-										input.wash-pass-input(type="text" placeholder="Подтвердите")
+										input.wash-input(type="text" placeholder="Старый пароль")
+										input.wash-input(type="text" placeholder="Новый пароль")
+										input.wash-input(type="text" placeholder="Подтвердите")
 										a(href="#").wash-pass-btn Изменить пароль
 										
 		script(data-headjs-load='js/init.js', src='js/lib/head.js')

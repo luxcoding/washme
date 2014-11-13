@@ -33,9 +33,8 @@
                   <div class="wash"><a href="#" style="background-image: url(img/logo-car.png);" class="wash-logo"></a>
                     <div class="wash-my">
                       <div class="wash-my-title">AVTOSPA</div>
-                      <div class="wash-stars"><span class="star"><i class="star-active"></i><i class="star-active"></i><i class="star-active"></i><i class="star-active"></i><i class="star-unnactive"></i><i class="star-summ">26</i></span></div><a href="#" class="wash-my-red">Редактировать</a>
-                    </div>
-                    <div style="display: none;" class="wash-red"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque praesentium impedit, quaerat veniam? Hic aspernatur fugiat dignissimos nemo, ullam nam eveniet odit vel. Reprehenderit itaque, placeat eveniet illum laboriosam quod!</div>
+                      <div class="wash-stars"><span class="star"><i class="star-active"></i><i class="star-active"></i><i class="star-active"></i><i class="star-active"></i><i class="star-unnactive"> </i><i class="star-summ">26</i></span></div>
+                    </div><a href="#" class="wash-red">Изменить лого </a><a href="#" class="wash-my-red js-send-red">Редактировать</a><a href="#" class="wash-my-save js-send-save">Сохранить</a>
                   </div>
                 </div>
               </div>
@@ -44,21 +43,29 @@
               <div class="grid-content">
                 <div class="grid-content-in">
                   <div class="wash-contacts">
-                    <div class="wash-contacts-item">
-                      <div class="wash-contacts-meta">Ул. Шверника 19</div>
-                      <div class="wash-contacts-detail">адрес</div>
+                    <div style="display: block;" class="wash-contacts-info">
+                      <div class="wash-contacts-item">
+                        <div class="wash-contacts-meta">Ул. Шверника 19</div>
+                        <div class="wash-contacts-detail">адрес</div>
+                      </div>
+                      <div class="wash-contacts-item">
+                        <div class="wash-contacts-meta">support@avtospa.ru</div>
+                        <div class="wash-contacts-detail">e-mail</div>
+                      </div>
+                      <div class="wash-contacts-item">
+                        <div class="wash-contacts-meta"><span class="small">+7 (916) </span><span>800 60 99</span></div>
+                        <div class="wash-contacts-detail">телефон</div>
+                      </div>
+                      <div class="wash-contacts-item">
+                        <div class="wash-contacts-meta">07 : 00 – 01 : 00</div>
+                        <div class="wash-contacts-detail">часы работы</div>
+                      </div>
                     </div>
-                    <div class="wash-contacts-item">
-                      <div class="wash-contacts-meta">support@avtospa.ru</div>
-                      <div class="wash-contacts-detail">e-mail</div>
-                    </div>
-                    <div class="wash-contacts-item">
-                      <div class="wash-contacts-meta"><span class="small">+7 (916) </span><span>800 60 99</span></div>
-                      <div class="wash-contacts-detail">телефон</div>
-                    </div>
-                    <div class="wash-contacts-item">
-                      <div class="wash-contacts-meta">07 : 00 – 01 : 00</div>
-                      <div class="wash-contacts-detail">часы работы</div>
+                    <div style="display: none;" class="wash-contacts-red">
+                      <input type="text" placeholder="Адрес" class="wash-input">
+                      <input type="text" placeholder="E-mail" class="wash-input">
+                      <input type="text" placeholder="Телефон" class="wash-input">
+                      <input type="text" placeholder="Часы работы" class="wash-input">
                     </div>
                   </div>
                 </div>
@@ -80,26 +87,98 @@
                 <div class="grid-content-in">
                   <div class="wash-option">
                     <div class="wash-option-meta">Дополнительные опции</div>
-                    <div class="wash-option-label">
-                      <div class="label"><i class="i-card ico"></i>
-                        <div class="label-descr">Оплата картой</div>
+                    <div style="display: block;" class="wash-option-active">
+                      <div class="wash-option-label">
+                        <div class="label"><i class="i-card ico"></i>
+                          <div class="label-descr">Оплата картой</div>
+                        </div>
+                        <div class="label"><i class="i-wifi ico"></i>
+                          <div class="label-descr">Wi-Fi</div>
+                        </div>
+                        <div class="label"><i class="i-coffee ico"></i>
+                          <div class="label-descr">Кафе</div>
+                        </div>
+                        <div class="label"><i class="i-sofa ico"></i>
+                          <div class="label-descr">Комната отдыха</div>
+                        </div>
+                        <div class="label"><i class="i-settings ico"></i>
+                          <div class="label-descr">Шиномонтаж</div>
+                        </div>
                       </div>
-                      <div class="label"><i class="i-wifi ico"></i>
-                        <div class="label-descr">Wi-Fi</div>
-                      </div>
-                      <div class="label"><i class="i-coffee ico"></i>
-                        <div class="label-descr">Кафе</div>
-                      </div>
-                      <div class="label"><i class="i-sofa ico"></i>
-                        <div class="label-descr">Комната отдыха</div>
-                      </div>
-                      <div class="label"><i class="i-settings ico"></i>
-                        <div class="label-descr">Шиномонтаж</div>
+                      <div class="wash-option-note">
+                        <div class="wash-option-note-title">Ручная, Самообслуживание</div>
+                        <div class="wash-option-meta">тип мойки</div>
                       </div>
                     </div>
-                    <div class="wash-option-note">
-                      <div class="wash-option-note-title">Ручная, Самообслуживание</div>
-                      <div class="wash-option-meta">тип мойки</div>
+                    <div style="display: none;" class="wash-option-readme">
+                      <div class="ch-wrap">
+                        <div class="ch-col">
+                          <div class="ch-row">
+                            <label class="checkbox">
+                              <input type="checkbox" value="" checked><span>Оплата картой<i class="checkbox-ico"></i></span>
+                            </label>
+                          </div>
+                          <div class="ch-row">
+                            <label class="checkbox">
+                              <input type="checkbox" value="" checked><span>Кафе<i class="checkbox-ico"></i></span>
+                            </label>
+                          </div>
+                          <div class="ch-row">
+                            <label class="checkbox">
+                              <input type="checkbox" value="" checked><span>Wi-fi<i class="checkbox-ico"></i></span>
+                            </label>
+                          </div>
+                          <div class="ch-row">
+                            <label class="checkbox">
+                              <input type="checkbox" value=""><span>Комната отдыха<i class="checkbox-ico"></i></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="ch-col">
+                          <div class="ch-row">
+                            <label class="checkbox">
+                              <input type="checkbox" value=""><span>Шиномонтаж<i class="checkbox-ico"></i></span>
+                            </label>
+                          </div>
+                          <div class="ch-row">
+                            <label class="checkbox">
+                              <input type="checkbox" value="" checked><span>Магазин<i class="checkbox-ico"></i></span>
+                            </label>
+                          </div>
+                          <div class="ch-row">
+                            <label class="checkbox">
+                              <input type="checkbox" value=""><span>Заправка<i class="checkbox-ico"> </i></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ch-wrap">
+                        <div class="ch-title">Тип мойки</div>
+                        <div class="ch-col">
+                          <div class="ch-row">
+                            <label class="checkbox">
+                              <input type="checkbox" value="" checked><span>Ручная<i class="checkbox-ico"></i></span>
+                            </label>
+                          </div>
+                          <div class="ch-row">
+                            <label class="checkbox">
+                              <input type="checkbox" value="" checked><span>Самообслуживание<i class="checkbox-ico"> </i></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="ch-col">
+                          <div class="ch-row">
+                            <label class="checkbox">
+                              <input type="checkbox" value=""><span>Мобильная<i class="checkbox-ico"></i></span>
+                            </label>
+                          </div>
+                          <div class="ch-row">
+                            <label class="checkbox">
+                              <input type="checkbox" value=""><span>Автоматическая<i class="checkbox-ico"> </i></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -125,9 +204,9 @@
                 <div class="grid-content-in">
                   <div class="wash-pass">
                     <div class="wash-pass-title">Изменить пароль</div>
-                    <input type="text" placeholder="Старый пароль" class="wash-pass-input">
-                    <input type="text" placeholder="Новый пароль" class="wash-pass-input">
-                    <input type="text" placeholder="Подтвердите" class="wash-pass-input"><a href="#" class="wash-pass-btn">Изменить пароль</a>
+                    <input type="text" placeholder="Старый пароль" class="wash-input">
+                    <input type="text" placeholder="Новый пароль" class="wash-input">
+                    <input type="text" placeholder="Подтвердите" class="wash-input"><a href="#" class="wash-pass-btn">Изменить пароль</a>
                   </div>
                 </div>
               </div>

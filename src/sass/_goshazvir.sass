@@ -440,18 +440,43 @@
 		+normal
 	.wash-stars
 		margin-bottom: 50px
-	.wash-my-red
-		display: inline-block
-		padding: 7px 15px
+
+.wash-my-red
+	display: inline-block
+	padding: 7px 15px
+	color: $gray
+	+osl
+	border: 2px solid #eceff1
+	border-radius: 3px
+	transition: all 0.2s linear 0.2s
+	&:hover
 		color: $gray
-		+osl
+		background: #eceff1
+		transition: all 0.2s linear 0.2s
+		
+.wash-red
+	display: none
+	&.is-active 
+		display: block
+		width: 142px
+		margin: 0 auto 70px
+		padding: 7px 5px
 		border: 2px solid #eceff1
 		border-radius: 3px
-		transition: all 0.2s linear 0.2s
-		&:hover
-			color: $gray
-			background: #eceff1
-			transition: all 0.2s linear 0.2s
+		font-size: 16px
+		color: #9FA3A4
+		+osl 
+.wash-my-save
+	display: none
+	padding: 7px 15px
+	color: #fff
+	+osl
+	border: 2px solid #15adc4
+	background: #15adc4 
+	border-radius: 3px
+	transition: all 0.2s linear 0.2s
+	&.is-active
+		display: inline-block
 
 .wash-map
 	margin: 0 -30px
@@ -548,26 +573,6 @@
 		color: $gray
 		font-size: 16px
 		+osl 
-	.wash-pass-input
-		display: block
-		width: 100%
-		height: 52px
-		padding: 10px
-		margin-top: 2px
-		background: #F5F7F8
-		outline: none
-		border: 0
-		border-radius: 5px
-		box-sizing: border-box
-		text-align: center
-		color: #9FA3A4
-		+osl
-		+placeholder
-			color: #9FA3A4
-			+osl
-		&:focus
-			+placeholder
-				color: transparent 
 	.wash-pass-btn
 		margin-top: 54px
 		display: block
@@ -581,6 +586,28 @@
 			background: $blue2
 			border-color: $blue2
 			transition: all 0.2s linear 0.2s
+
+.wash-input
+	display: block
+	width: 100%
+	height: 52px
+	padding: 10px
+	margin-top: 2px
+	background: #F5F7F8
+	outline: none
+	border: 0
+	border-radius: 5px
+	box-sizing: border-box
+	text-align: center
+	color: #9FA3A4
+	+osl
+	+placeholder
+		color: #9FA3A4
+		+osl
+	&:focus
+		+placeholder
+			color: transparent 
+
 .label
 	height: 56px
 	line-height: 56px
@@ -601,10 +628,57 @@
 		+osl
 		color: $gray 
 
+.ch-wrap
+	.ch-col
+		width: 49%
+		display: inline-block
+		vertical-align: top
+		font-size: 0
+	.ch-row
+		margin-bottom: 10px
+		font-size: 15px
+		text-align: left
+	.ch-title
+		margin-top: 30px
+		margin-bottom: 20px
+		font-size: 16px
+		+osl
+		color: #9fa3a4 
+		text-align: center
+
 .place-card
 	display: none
 .login-control
 	display: none
+	
+
+// checkbox
+// --------------------------------------------------
+.checkbox
+	position: relative
+	cursor: pointer
+	+nosel
+	font-size: 15px
+	+osl
+	color: #9fa3a4 
+	span
+		padding-left: 27px
+		font-size: 14px
+	input
+		opacity: 0
+		position: absolute
+		left: 0
+		top: 0
+	input + span
+		.checkbox-ico
+			position: absolute
+			top: 0px
+			left: 0px
+			+s($s-ch)
+	input:checked + span
+		.checkbox-ico
+			+s($s-ch-a)
+
 //	MEDIA
 // ===============================================
 // +rmin(1500)

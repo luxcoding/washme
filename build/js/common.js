@@ -69,6 +69,28 @@ $('.popup').on('click', function(e) {
      $('.order-add').removeClass('is-active');
   });
 
+  $('.js-send-red').on('click', function() {
+    $('.wash-contacts-info').hide();
+    $('.wash-my').hide();
+    $('.wash-contacts-red').show(); 
+    $('.wash-red').addClass('is-active');
+    $(this).hide();
+    $('.wash-my-save').addClass('is-active');
+    $('.wash-option-active').hide();
+    $('.wash-option-readme').show();
+  });
+
+  $('.js-send-save').on('click', function() {
+   $('.wash-contacts-info').show();
+   $('.wash-my').show();
+   $('.wash-contacts-red').hide(); 
+   $('.wash-red').removeClass('is-active');
+   $('.js-send-red').show();
+   $('.wash-my-save').removeClass('is-active');
+   $('.wash-option-active').show();
+   $('.wash-option-readme').hide();
+  });
+
   // resize
   $(window).resize(function(){
     headerAbsolute();

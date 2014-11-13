@@ -3363,61 +3363,61 @@ Copyright (c) 2014 Daniel Eden
 
 .i-set {
   background-image: url("../img/sprite.png");
-  background-position: -107px -150px;
+  background-position: -156px -150px;
   width: 17px;
   height: 17px; }
 
 .i-exit {
   background-image: url("../img/sprite.png");
-  background-position: -243px -116px;
+  background-position: -38px -150px;
   width: 17px;
   height: 18px; }
 
 .i-coffee {
   background-image: url("../img/sprite.png");
-  background-position: -81px -75px;
+  background-position: -145px -75px;
   width: 31px;
   height: 32px; }
 
 .i-coffee-bl {
   background-image: url("../img/sprite.png");
-  background-position: -226px -75px;
+  background-position: -109px -75px;
   width: 31px;
   height: 32px; }
 
 .i-wifi {
   background-image: url("../img/sprite.png");
-  background-position: -20px -116px;
+  background-position: -10px -116px;
   width: 33px;
   height: 28px; }
 
 .i-wifi-bl {
   background-image: url("../img/sprite.png");
-  background-position: -58px -116px;
+  background-position: -48px -116px;
   width: 33px;
   height: 28px; }
 
 .i-card {
   background-image: url("../img/sprite.png");
-  background-position: -121px -116px;
+  background-position: -149px -116px;
   width: 33px;
   height: 24px; }
 
 .i-card-bl {
   background-image: url("../img/sprite.png");
-  background-position: -159px -116px;
+  background-position: -111px -116px;
   width: 33px;
   height: 24px; }
 
 .i-close {
   background-image: url("../img/sprite.png");
-  background-position: -197px -116px;
+  background-position: -252px -75px;
   width: 18px;
   height: 18px; }
 
 .i-ok {
   background-image: url("../img/sprite.png");
-  background-position: -220px -116px;
+  background-position: -60px -150px;
   width: 18px;
   height: 18px; }
 
@@ -3429,19 +3429,19 @@ Copyright (c) 2014 Daniel Eden
 
 .i-sofa {
   background-image: url("../img/sprite.png");
-  background-position: -117px -75px;
+  background-position: -71px -75px;
   width: 33px;
   height: 32px; }
 
 .i-gas-station {
   background-image: url("../img/sprite.png");
-  background-position: -193px -75px;
+  background-position: -219px -75px;
   width: 28px;
   height: 32px; }
 
 .i-settings {
   background-image: url("../img/sprite.png");
-  background-position: -155px -75px;
+  background-position: -181px -75px;
   width: 33px;
   height: 32px; }
 
@@ -3615,7 +3615,7 @@ body {
     .top .top-status:before {
       content: "";
       background-image: url("../img/sprite.png");
-      background-position: -156px -150px;
+      background-position: -178px -150px;
       width: 34px;
       height: 10px;
       position: absolute;
@@ -3734,13 +3734,13 @@ html, body {
     padding: 0 2px; }
   .popup .popup-top-link {
     background-image: url("../img/sprite.png");
-    background-position: -210px -150px;
+    background-position: -232px -150px;
     width: 10px;
     height: 9px;
     display: inline-block; }
   .popup .popup-top-link_active {
     background-image: url("../img/sprite.png");
-    background-position: -240px -150px;
+    background-position: -252px -98px;
     width: 10px;
     height: 9px; }
   .popup .popup-time:before, .popup .popup-time:after {
@@ -3803,7 +3803,7 @@ html, body {
     padding: 0 25px; }
   .popup .popup-action-cancel-ico {
     background-image: url("../img/sprite.png");
-    background-position: -84px -150px;
+    background-position: -83px -150px;
     width: 18px;
     height: 18px;
     display: inline-block;
@@ -3820,7 +3820,7 @@ html, body {
       color: #21a9be; }
   .popup .popup-action-end-ico {
     background-image: url("../img/sprite.png");
-    background-position: -38px -150px;
+    background-position: -106px -150px;
     width: 18px;
     height: 18px;
     display: inline-block;
@@ -4069,7 +4069,7 @@ html, body {
       .order .order-item-state.m-ok:before {
         content: "";
         background-image: url("../img/sprite.png");
-        background-position: -220px -116px;
+        background-position: -60px -150px;
         width: 18px;
         height: 18px;
         position: absolute;
@@ -4090,7 +4090,7 @@ html, body {
       .order .order-item-state.m-del:before {
         content: "";
         background-image: url("../img/sprite.png");
-        background-position: -61px -150px;
+        background-position: -235px -116px;
         width: 18px;
         height: 18px;
         position: absolute;
@@ -4116,7 +4116,7 @@ html, body {
     .order .order-add .order-add-ico {
       display: inline-block;
       background-image: url("../img/sprite.png");
-      background-position: 0px -185px;
+      background-position: -260px -150px;
       width: 8px;
       height: 8px;
       -webkit-transition: all 0.3s ease;
@@ -4139,12 +4139,12 @@ html, body {
     margin-left: 0; }
 .star .star-active {
   background-image: url("../img/sprite.png");
-  background-position: -225px -150px;
+  background-position: -258px -116px;
   width: 10px;
   height: 9px; }
 .star .star-unnactive {
   background-image: url("../img/sprite.png");
-  background-position: -195px -150px;
+  background-position: -217px -150px;
   width: 10px;
   height: 9px; }
 .star .star-select {
@@ -4233,7 +4233,7 @@ html, body {
         color: #FFF; }
       .tarif .tarif-item.is-active .rub {
         background-image: url("../img/sprite.png");
-        background-position: -51px -75px;
+        background-position: -10px -75px;
         width: 25px;
         height: 36px; }
   .tarif .tarif-title {
@@ -4309,7 +4309,7 @@ html, body {
 
 .rub {
   background-image: url("../img/sprite.png");
-  background-position: -20px -75px;
+  background-position: -40px -75px;
   width: 26px;
   height: 36px;
   display: inline-block;
@@ -4365,7 +4365,8 @@ html, body {
   font-family: "MuseoSansCyrl300", Arial, Helvetica, sans-serif; }
 .wash .wash-stars {
   margin-bottom: 50px; }
-.wash .wash-my-red {
+
+.wash-my-red {
   display: inline-block;
   padding: 7px 15px;
   color: #9fa3a4;
@@ -4376,11 +4377,41 @@ html, body {
   border-radius: 3px;
   -webkit-transition: all 0.2s linear 0.2s;
   transition: all 0.2s linear 0.2s; }
-  .wash .wash-my-red:hover {
+  .wash-my-red:hover {
     color: #9fa3a4;
     background: #eceff1;
     -webkit-transition: all 0.2s linear 0.2s;
     transition: all 0.2s linear 0.2s; }
+
+.wash-red {
+  display: none; }
+  .wash-red.is-active {
+    display: block;
+    width: 142px;
+    margin: 0 auto 70px;
+    padding: 7px 5px;
+    border: 2px solid #eceff1;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #9FA3A4;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal; }
+
+.wash-my-save {
+  display: none;
+  padding: 7px 15px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  border: 2px solid #15adc4;
+  background: #15adc4;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s; }
+  .wash-my-save.is-active {
+    display: inline-block; }
 
 .wash-map {
   margin: 0 -30px;
@@ -4440,7 +4471,7 @@ html, body {
   font-family: "MuseoSansCyrl100", Arial, Helvetica, sans-serif; }
   .wash-plan .wash-plan-price .price {
     background-image: url("../img/sprite.png");
-    background-position: -20px -75px;
+    background-position: -40px -75px;
     width: 26px;
     height: 36px;
     display: inline-block; }
@@ -4493,50 +4524,6 @@ html, body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-style: normal; }
-.wash-pass .wash-pass-input {
-  display: block;
-  width: 100%;
-  height: 52px;
-  padding: 10px;
-  margin-top: 2px;
-  background: #F5F7F8;
-  outline: none;
-  border: 0;
-  border-radius: 5px;
-  box-sizing: border-box;
-  text-align: center;
-  color: #9FA3A4;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-style: normal; }
-  .wash-pass .wash-pass-input::-webkit-input-placeholder {
-    color: #9FA3A4;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal; }
-  .wash-pass .wash-pass-input::-moz-placeholder {
-    color: #9FA3A4;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal; }
-  .wash-pass .wash-pass-input:-ms-input-placeholder {
-    color: #9FA3A4;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal; }
-  .wash-pass .wash-pass-input::placeholder {
-    color: #9FA3A4;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal; }
-  .wash-pass .wash-pass-input:focus::-webkit-input-placeholder {
-    color: transparent; }
-  .wash-pass .wash-pass-input:focus::-moz-placeholder {
-    color: transparent; }
-  .wash-pass .wash-pass-input:focus:-ms-input-placeholder {
-    color: transparent; }
-  .wash-pass .wash-pass-input:focus::placeholder {
-    color: transparent; }
 .wash-pass .wash-pass-btn {
   margin-top: 54px;
   display: block;
@@ -4552,6 +4539,51 @@ html, body {
     border-color: #15adc4;
     -webkit-transition: all 0.2s linear 0.2s;
     transition: all 0.2s linear 0.2s; }
+
+.wash-input {
+  display: block;
+  width: 100%;
+  height: 52px;
+  padding: 10px;
+  margin-top: 2px;
+  background: #F5F7F8;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #9FA3A4;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+  .wash-input::-webkit-input-placeholder {
+    color: #9FA3A4;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal; }
+  .wash-input::-moz-placeholder {
+    color: #9FA3A4;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal; }
+  .wash-input:-ms-input-placeholder {
+    color: #9FA3A4;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal; }
+  .wash-input::placeholder {
+    color: #9FA3A4;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal; }
+  .wash-input:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .wash-input:focus::-moz-placeholder {
+    color: transparent; }
+  .wash-input:focus:-ms-input-placeholder {
+    color: transparent; }
+  .wash-input:focus::placeholder {
+    color: transparent; }
 
 .label {
   height: 56px;
@@ -4575,11 +4607,66 @@ html, body {
     font-style: normal;
     color: #9fa3a4; }
 
+.ch-wrap .ch-col {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0; }
+.ch-wrap .ch-row {
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: left; }
+.ch-wrap .ch-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #9fa3a4;
+  text-align: center; }
+
 .place-card {
   display: none; }
 
 .login-control {
   display: none; }
+
+.checkbox {
+  position: relative;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #9fa3a4; }
+  .checkbox span {
+    padding-left: 27px;
+    font-size: 14px; }
+  .checkbox input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .checkbox input + span .checkbox-ico {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/sprite.png");
+    background-position: -187px -116px;
+    width: 19px;
+    height: 19px; }
+  .checkbox input:checked + span .checkbox-ico {
+    background-image: url("../img/sprite.png");
+    background-position: -211px -116px;
+    width: 19px;
+    height: 19px; }
 
 @media only screen and (min-width: 1600px) {
   .tarif .tarif-bottom {
