@@ -41,7 +41,7 @@
         <div class="top-in m-archive">
           <ul class="status-list">
             <li class="status-list-item"><a href="#" class="status-list-link"><span class="status-list-link-descr">Принятых заказов</span><span class="status-list-link-num">143</span></a></li>
-            <li class="status-list-item"><a href="#" class="status-list-link"><span class="status-list-link-descr">Выполнено</span><span class="status-list-link-num">135</span></a></li>
+            <li class="status-list-item"><a href="#" class="status-list-link is-arr"><span class="status-list-link-descr">Выполнено</span><span class="status-list-link-num">135</span></a></li>
             <li class="status-list-item"><a href="#" class="status-list-link"><span class="status-list-link-descr">Текущих</span><span class="status-list-link-num">3</span></a></li>
             <li class="status-list-item"><a href="#" class="status-list-link"><span class="status-list-link-descr">Отменено</span><span class="status-list-link-num">5</span></a></li>
           </ul>
@@ -214,7 +214,7 @@
                 </div>
               </div>
             </div>
-            <div class="order-item-state m-del js-hide"></div>
+            <div data="order1" class="order-item-state m-del js-send-remove-popup"></div>
           </li>
           <li class="order-item bounceInLeft animated s2">
             <div class="order-item-date">
@@ -254,7 +254,7 @@
                 </div>
               </div>
             </div>
-            <div class="order-item-state m-del js-hide"></div>
+            <div data="order2" class="order-item-state m-del js-send-remove-popup"></div>
           </li>
           <li class="order-item bounceInLeft animated">
             <div class="order-item-date">
@@ -297,6 +297,14 @@
             <div class="order-item-state m-ok"></div>
           </li>
         </ul>
+      </div>
+    </div>
+    <div class="popup-out m-remove animated js-remove-popup">
+      <div class="popup animated">
+        <div class="popup-order">
+          <h4 class="popup-title">Подтвердите удаление заказа</h4>
+        </div>
+        <div class="popup-action"><a href="#" class="popup-action-cancel js-popup-close"><i class="popup-action-cancel-ico"></i>отмена</a><a href="#" class="popup-action-end js-popup-close js-hide"><i class="popup-action-end-ico"></i>удалить</a></div>
       </div>
     </div>
     <script data-headjs-load="js/init.js" src="js/lib/head.js"> </script>

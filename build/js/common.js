@@ -7,10 +7,24 @@ head.ready(function() {
   }
   indexHeight();
 
-  $('.js-hide').on('click', function() {
-    $(this).parent().addClass('bounceOutLeft').addClass('fadeOutLeft');
-    var element = $(this);
-    imgTimeout = setTimeout(function(){element.parent().css('display','none');}, 1500); 
+  // $('.js-hide').on('click', function() {
+    // $(this).parent().addClass('bounceOutLeft').addClass('fadeOutLeft');
+    // var element = $(this);
+    // imgTimeout = setTimeout(function(){element.parent().css('display','none');}, 1500); 
+
+  // });
+
+  $('.js-send-remove-popup').on('click', function() {
+    // получили отрибут текущего order
+    var getAttr = $(this)
+    // открытие попапа
+    $('.js-remove-popup').addClass('js-popup-open').addClass('fadeIn').children('.popup').addClass('bounceInDown');
+    // закрытие текущего order при клике на "удалить" в попапе
+    $('.js-hide').on('click', function(event) {
+      var element = getAttr;
+      element.parent().addClass('bounceOutLeft').addClass('fadeOutLeft');
+      imgTimeout = setTimeout(function(){element.parent().css('display','none');}, 1500); 
+    });
   });
 
   // popup
@@ -23,6 +37,7 @@ head.ready(function() {
     $('.js-popup-2').addClass('js-popup-open').addClass('fadeIn').children('.popup').addClass('bounceInDown');
     return false;
   }); 
+
 
 $('.popup-out').on('click', function() {
   $(this).removeClass('js-popup-open').removeClass('fadeIn').children('.popup').removeClass('bounceInDown');
@@ -102,7 +117,6 @@ $('.popup').on('click', function(e) {
   // resize
   $(window).resize(function(){
     headerAbsolute();
-    indexHeight();
   });
 
   $(function() {

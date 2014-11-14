@@ -36,7 +36,7 @@ html
 								span.status-list-link-descr Принятых заказов
 								span.status-list-link-num 143
 						li.status-list-item
-							a(href="#").status-list-link
+							a(href="#").status-list-link.is-arr
 								span.status-list-link-descr Выполнено
 								span.status-list-link-num 135
 						li.status-list-item
@@ -251,7 +251,7 @@ html
 											i.star-unnactive
 											i.star-unnactive
 									.order-item-info-tel-descr.m-elipsis Нет комментариев
-						.order-item-state.m-del.js-hide
+						.order-item-state.m-del.js-send-remove-popup(data="order1")
 					li.order-item.bounceInLeft.animated.s2
 						.order-item-date
 							.order-item-date-num 19
@@ -298,7 +298,7 @@ html
 											i.star-unnactive
 											i.star-unnactive
 									.order-item-info-tel-descr.m-elipsis Нет комментариев
-						.order-item-state.m-del.js-hide
+						.order-item-state.m-del.js-send-remove-popup(data="order2")
 					li.order-item.bounceInLeft.animated
 						.order-item-date
 							.order-item-date-num 18
@@ -347,4 +347,16 @@ html
 											i.star-select
 									.order-item-info-tel-descr.m-elipsis.js-tooltipster-hover(title="Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме") Качество мойки – отличное, но Wi-Fi бы не поме ... Качество мойки – отличное, но Wi-Fi бы не поме ...
 						.order-item-state.m-ok
+		.popup-out.m-remove.animated.js-remove-popup
+			.popup.animated
+				.popup-order
+					h4.popup-title
+						| Подтвердите удаление заказа
+				.popup-action
+					a.popup-action-cancel.js-popup-close(href="#")
+						i.popup-action-cancel-ico
+						| отмена
+					a.popup-action-end.js-popup-close.js-hide(href="#")
+						i.popup-action-end-ico
+						| удалить
 		script(data-headjs-load='js/init.js', src='js/lib/head.js') 
