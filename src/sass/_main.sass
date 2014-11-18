@@ -14,6 +14,13 @@ $tooper-h: 70px
 
 //	GENERAL
 // ===============================================
+html.ie8, html.ie9
+	body.m-archive
+		overflow: auto
+		overflow: auto
+
+
+
 body
 	background: #ebeff0 
 	+os
@@ -21,6 +28,9 @@ body
 	line-height: 1.2 
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: antialiased
+	&.m-archive
+		overflow-x: auto
+		overflow-y: hidden
 
 .wrap
 	width: $container-min-w 

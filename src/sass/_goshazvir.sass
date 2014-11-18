@@ -763,7 +763,16 @@
 	.order
 		&.m-archive
 			.order-item-car
-				width: auto
+				// width: auto
+				width: 306px
+	.order
+		&.m-archive
+			.order-item-car
+				.order-item-car-item-model
+					width: 90%
+					+text-overflow
+				.order-item-car-owner-name
+					width: 335px
 +r(650)
 	.popup
 		width: 94%
