@@ -127,7 +127,7 @@ $('.popup').on('click', function(e) {
   
     inClass               :   'fade-in-up',
     outClass              :   'fade-out-up',
-    inDuration            :    1500,
+    inDuration            :    1250,
     outDuration           :    800,
     linkElement           :   '.animsition-link', 
     // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
