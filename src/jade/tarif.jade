@@ -6,97 +6,98 @@ doctype html
 html
 	include includes/head.jade 
 	body
-		.header
-			.topper
-				.topper-in
-					a(href="#").logo
-						|wash me
-					ul.nav
-						li.nav-item 
-							a(href="#").nav-link
-								span.nav-label
-									|8
-								span.nav-text
-									|осталось
-						li.nav-item
-							a(href="#").nav-link
-								i.ico.i-set
-								span.nav-text
-									|моя мойка
-						li.nav-item
-							a(href="#").nav-link
-								i.ico.i-exit
-								span.nav-text
-									|выйти
-		.page.page-mod
-			.page-in
-				ul.tarif
-					li.tarif-item
-						.tarif-title Бесплатный
-						.tarif-meta Самый популярный
-						.tarif-price
-							.tarif-price-summ 
-								span 0 
-								i.rub
-							.tarif-price-meta в месяц
-						.tarif-info
-							.tarif-info-item 
-								span.sumbol.m-infinite ∞
-								span прямых заказов
-							.tarif-info-item 
-								span.sumbol.m-num 5
-								span дополнительных заказов
-						.tarif-bottom
-							a.tarif-btn(href="#") Ваш текущий план
-					li.tarif-item
-						.tarif-title Базовый
-						.tarif-meta Самый популярный
-						.tarif-price
-							.tarif-price-summ 
-								span 500
-								i.rub
-							.tarif-price-meta в месяц
-						.tarif-info
-							.tarif-info-item 
-								span.sumbol.m-infinite ∞
-								span прямых заказов
-							.tarif-info-item 
-								span.sumbol.m-num 10
-								span дополнительных заказов
-						.tarif-bottom
-							a.tarif-btn(href="#") Перейти на тариф «Базовый»
-					li.tarif-item.is-active
-						.tarif-title Стандарт
-						.tarif-meta Самый популярный
-						.tarif-price
-							.tarif-price-summ 
-								span 1000
-								i.rub
-							.tarif-price-meta в месяц
-						.tarif-info
-							.tarif-info-item 
-								span.sumbol.m-infinite ∞
-								span прямых заказов
-							.tarif-info-item 
-								span.sumbol.m-num 10
-								span дополнительных заказов
-						.tarif-bottom
-							a.tarif-btn(href="#") Перейти на тариф «Стандарт»
-					li.tarif-item 
-						.tarif-title Премиум
-						.tarif-meta Самый популярный
-						.tarif-price
-							.tarif-price-summ 
-								span 1500
-								i.rub
-							.tarif-price-meta в месяц
-						.tarif-info
-							.tarif-info-item 
-								span.sumbol.m-infinite ∞
-								span прямых заказов
-							.tarif-info-item 
-								span.sumbol.m-num 50
-								span дополнительных заказов
-						.tarif-bottom
-							a.tarif-btn(href="#") Перейти на тариф «Премиум»
+		.animsition
+			.header
+				.topper
+					.topper-in
+						a(href="current_orders.html").logo.animsition-link
+							|wash me
+						ul.nav
+							li.nav-item 
+								a(href="#").nav-link
+									span.nav-label
+										|8
+									span.nav-text
+										|осталось
+							li.nav-item
+								a(href="wash.html").nav-link.animsition-link
+									i.ico.i-set
+									span.nav-text
+										|моя мойка
+							li.nav-item
+								a(href="#").nav-link
+									i.ico.i-exit
+									span.nav-text
+										|выйти
+			.page.page-mod
+				.page-in
+					ul.tarif
+						li.tarif-item
+							.tarif-title Бесплатный
+							.tarif-meta Самый популярный
+							.tarif-price
+								.tarif-price-summ 
+									span 0 
+									i.rub
+								.tarif-price-meta в месяц
+							.tarif-info
+								.tarif-info-item 
+									span.sumbol.m-infinite ∞
+									span прямых заказов
+								.tarif-info-item 
+									span.sumbol.m-num 5
+									span дополнительных заказов
+							.tarif-bottom
+								a.tarif-btn(href="#") Ваш текущий план
+						li.tarif-item
+							.tarif-title Базовый
+							.tarif-meta Самый популярный
+							.tarif-price
+								.tarif-price-summ 
+									span 500
+									i.rub
+								.tarif-price-meta в месяц
+							.tarif-info
+								.tarif-info-item 
+									span.sumbol.m-infinite ∞
+									span прямых заказов
+								.tarif-info-item 
+									span.sumbol.m-num 10
+									span дополнительных заказов
+							.tarif-bottom
+								a.tarif-btn(href="#") Перейти на тариф «Базовый»
+						li.tarif-item.is-active
+							.tarif-title Стандарт
+							.tarif-meta Самый популярный
+							.tarif-price
+								.tarif-price-summ 
+									span 1000
+									i.rub
+								.tarif-price-meta в месяц
+							.tarif-info
+								.tarif-info-item 
+									span.sumbol.m-infinite ∞
+									span прямых заказов
+								.tarif-info-item 
+									span.sumbol.m-num 10
+									span дополнительных заказов
+							.tarif-bottom
+								a.tarif-btn(href="#") Перейти на тариф «Стандарт»
+						li.tarif-item 
+							.tarif-title Премиум
+							.tarif-meta Самый популярный
+							.tarif-price
+								.tarif-price-summ 
+									span 1500
+									i.rub
+								.tarif-price-meta в месяц
+							.tarif-info
+								.tarif-info-item 
+									span.sumbol.m-infinite ∞
+									span прямых заказов
+								.tarif-info-item 
+									span.sumbol.m-num 50
+									span дополнительных заказов
+							.tarif-bottom
+								a.tarif-btn(href="#") Перейти на тариф «Премиум»
 		script(data-headjs-load='js/init.js', src='js/lib/head.js')

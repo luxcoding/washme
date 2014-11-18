@@ -14,6 +14,13 @@ $tooper-h: 70px
 
 //	GENERAL
 // ===============================================
+html.ie8, html.ie9
+	body.m-archive
+		overflow: auto
+		overflow: auto
+
+
+
 body
 	background: #ebeff0 
 	+os
@@ -21,6 +28,9 @@ body
 	line-height: 1.2 
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: antialiased
+	&.m-archive
+		overflow-x: auto
+		overflow-y: hidden
 
 .wrap
 	width: $container-min-w 
@@ -81,20 +91,49 @@ body
 			top: 0
 			right: 100%
 	.nav
-		margin-top: 24px
+		height: 69px
+		line-height: 69px
 		float: right
 		+clr
 		.nav-item
 			float: left 
-			margin-left: 75px
 		.nav-link
+			padding: 0 30px
+			display: block
 			+osl
 			transition: opacity .2s ease-in-out
+			position: relative
 			&:hover
-				.nav-text
-					// text-decoration: underline
-					opacity: 0.8
-					transition: opacity .2s ease-in-out 
+				background: #139fb7 
+				background: linear-gradient(#16a2b9 0%, #1099b5 100%)
+			&.is-active
+				background: #129eb8  
+				background-image: linear-gradient(bottom, #1798af 0%, #1099b5 100%);
+				&:before
+					content: ""
+					+s($s-arr-nav)
+					position: absolute
+					bottom: -2px
+					left: 50%
+					margin-left: -19px
+			&.m-settings
+				&.is-active 
+					.i-set
+						+s($s-set-w)
+				&:hover
+					color: #e6f9fc
+					.i-set
+						+s($s-set-w)
+				&:before
+					+s($s-arr-nav2)
+			&.m-exit
+				&.is-active
+					.i-exit
+						+s($s-exit-w)
+				&:hover
+				 .i-exit
+						+s($s-exit-w)
+
 		.nav-text
 			font-size: 16px
 			color: #e6f9fc  
@@ -161,7 +200,7 @@ body
 			content: ""
 			+s($s-super-arr)
 			position: absolute
-			bottom: -10px
+			bottom: -9px
 			left: 50%
 			margin-left: -17px
 	.top-link
@@ -193,13 +232,24 @@ body
 // ===============================================
 .page
 	min-height: 300px
-	padding-top: 211px
+	// padding-top: 211px
+	padding-top: 170px
 	&.js-set-height
 		min-height: 100px
 	&.page-mod
-		padding-top: 110px  
+		height: 100%
+		padding-top: 110px 
+		box-sizing: border-box
+		.page-in
+			padding-top: 0
+			height: 100%
+			display: table
+			.tarif, .grid
+				display: table-cell
+				vertical-align: middle
 	.page-in
 		@extend %wrap
+		padding-top: 41px
 
 //	MEDIA
 // ===============================================
@@ -253,6 +303,23 @@ html, body
 	&.js-popup-open
 		display: block
 		z-index: 999
+	&.m-remove
+		.popup
+			width: 480px
+			height: 260px
+		.popup-order
+			line-height: 130px
+			background: #15adc4
+		.popup-order
+			min-height: 130px
+			vertical-align: middle
+			padding: 0
+		.popup-title
+			display: inline-block
+		.popup-action
+			height: 130px
+			box-sizing: border-box
+			
 
 .popup 
 	width: 660px
@@ -265,10 +332,11 @@ html, body
 	text-align: center
 	color: #FFF 
 	.popup-order
+		min-height: 172px
 		background-image: url(../img/bg-popup.jpg)
 		padding: 30px 80px  
 		box-sizing: border-box
-		+cover
+		// +cover
 	.popup-title
 		font-size: 18px
 		line-height: 30px
@@ -303,11 +371,15 @@ html, body
 		width: 110px
 		box-sizing: border-box
 		text-align: center
+		font-size: 14px
+		+osl
 	.popup-time-right
 		width: 110px
 		display: inline-block
 		text-align: center
-		box-sizing: border-box	
+		box-sizing: border-box
+		font-size: 14px
+		+osl
 	.popup-time-enter
 		padding: 9px 0
 		font-size: 30px
@@ -329,9 +401,12 @@ html, body
 		margin-right: 10px	
 		border: 2px solid transparent
 		border-radius: 3px 
-		transition: 0.3s
+		// transition: 0.3s
 		&:hover
-			border-color: #b9e7ed
+			// border-color: #b9e7ed
+			color: #FFF 
+			.popup-action-cancel-ico
+				+s($s-close-popup) 
 	.popup-action-cancel, .popup-action-end
 		+light 
 		display: inline-block
@@ -339,21 +414,22 @@ html, body
 		line-height: 50px
 		color: #B9E7ED 
 		padding: 0 25px 
-	.popup-action-cancel-ico
-		+s($s-close-popup)	
+	.popup-action-cancel-ico 
+		+s($s-close-popup2)	
 		display: inline-block
 		vertical-align: middle
 		margin-right: 10px
 	.popup-action-end
-		border: 2px solid #b9e7ed
+		border: 2px solid #91d4df
 		border-radius: 3px 
 		margin-right: 25px 
 		transition: 0.3s
 		&:hover
-			background-color: #B9E7ED
-			color: #21a9be  
+			background: #50bbcb
+			border-color: #50bbcb 
+			color: #fff  
 	.popup-action-end-ico	
-		+s($s-done)	
+		+s($s-done2)	
 		display: inline-block
 		margin-right: 10px
 		vertical-align: middle
@@ -371,12 +447,7 @@ html, body
 	&.s1-5
 		animation-duration: 1.5s
 	&.s2
-		animation-duration: 2s
-
-.asd
-	position: relative
-	z-index: 999
-
+		animation-duration: 1.25s
 
 
 

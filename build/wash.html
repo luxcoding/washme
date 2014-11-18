@@ -10,203 +10,220 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/common.css" media="screen" rel="stylesheet">
+    <script src="data:application/octet-stream;base64,Cgp3aW5kb3cuZ29vZ2xlID0gd2luZG93Lmdvb2dsZSB8fCB7fTsKZ29vZ2xlLm1hcHMgPSBnb29nbGUubWFwcyB8fCB7fTsKKGZ1bmN0aW9uKCkgewogIAogIGZ1bmN0aW9uIGdldFNjcmlwdChzcmMpIHsKICAgIGRvY3VtZW50LndyaXRlKCc8JyArICdzY3JpcHQgc3JjPSInICsgc3JjICsgJyInICsKICAgICAgICAgICAgICAgICAgICcgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij48JyArICcvc2NyaXB0PicpOwogIH0KICAKICB2YXIgbW9kdWxlcyA9IGdvb2dsZS5tYXBzLm1vZHVsZXMgPSB7fTsKICBnb29nbGUubWFwcy5fX2dqc2xvYWRfXyA9IGZ1bmN0aW9uKG5hbWUsIHRleHQpIHsKICAgIG1vZHVsZXNbbmFtZV0gPSB0ZXh0OwogIH07CiAgCiAgZ29vZ2xlLm1hcHMuTG9hZCA9IGZ1bmN0aW9uKGFwaUxvYWQpIHsKICAgIGRlbGV0ZSBnb29nbGUubWFwcy5Mb2FkOwogICAgYXBpTG9hZChbMC4wMDk5OTk5OTk3NzY0ODI1ODIsW1tbImh0dHBzOi8vbXRzMC5nb29nbGVhcGlzLmNvbS92dD9seXJzPW1AMjgwMDAwMDAwXHUwMDI2c3JjPWFwaVx1MDAyNmhsPWVuLVVTXHUwMDI2IiwiaHR0cHM6Ly9tdHMxLmdvb2dsZWFwaXMuY29tL3Z0P2x5cnM9bUAyODAwMDAwMDBcdTAwMjZzcmM9YXBpXHUwMDI2aGw9ZW4tVVNcdTAwMjYiXSxudWxsLG51bGwsbnVsbCxudWxsLCJtQDI4MDAwMDAwMCIsWyJodHRwczovL210czAuZ29vZ2xlLmNvbS92dD9seXJzPW1AMjgwMDAwMDAwXHUwMDI2c3JjPWFwaVx1MDAyNmhsPWVuLVVTXHUwMDI2IiwiaHR0cHM6Ly9tdHMxLmdvb2dsZS5jb20vdnQ/bHlycz1tQDI4MDAwMDAwMFx1MDAyNnNyYz1hcGlcdTAwMjZobD1lbi1VU1x1MDAyNiJdXSxbWyJodHRwczovL2tobXMwLmdvb2dsZWFwaXMuY29tL2toP3Y9MTYxXHUwMDI2aGw9ZW4tVVNcdTAwMjYiLCJodHRwczovL2tobXMxLmdvb2dsZWFwaXMuY29tL2toP3Y9MTYxXHUwMDI2aGw9ZW4tVVNcdTAwMjYiXSxudWxsLG51bGwsbnVsbCwxLCIxNjEiLFsiaHR0cHM6Ly9raG1zMC5nb29nbGUuY29tL2toP3Y9MTYxXHUwMDI2aGw9ZW4tVVNcdTAwMjYiLCJodHRwczovL2tobXMxLmdvb2dsZS5jb20va2g/dj0xNjFcdTAwMjZobD1lbi1VU1x1MDAyNiJdXSxbWyJodHRwczovL210czAuZ29vZ2xlYXBpcy5jb20vdnQ/bHlycz1oQDI4MDAwMDAwMFx1MDAyNnNyYz1hcGlcdTAwMjZobD1lbi1VU1x1MDAyNiIsImh0dHBzOi8vbXRzMS5nb29nbGVhcGlzLmNvbS92dD9seXJzPWhAMjgwMDAwMDAwXHUwMDI2c3JjPWFwaVx1MDAyNmhsPWVuLVVTXHUwMDI2Il0sbnVsbCxudWxsLG51bGwsbnVsbCwiaEAyODAwMDAwMDAiLFsiaHR0cHM6Ly9tdHMwLmdvb2dsZS5jb20vdnQ/bHlycz1oQDI4MDAwMDAwMFx1MDAyNnNyYz1hcGlcdTAwMjZobD1lbi1VU1x1MDAyNiIsImh0dHBzOi8vbXRzMS5nb29nbGUuY29tL3Z0P2x5cnM9aEAyODAwMDAwMDBcdTAwMjZzcmM9YXBpXHUwMDI2aGw9ZW4tVVNcdTAwMjYiXV0sW1siaHR0cHM6Ly9tdHMwLmdvb2dsZWFwaXMuY29tL3Z0P2x5cnM9dEAxMzIsckAyODAwMDAwMDBcdTAwMjZzcmM9YXBpXHUwMDI2aGw9ZW4tVVNcdTAwMjYiLCJodHRwczovL210czEuZ29vZ2xlYXBpcy5jb20vdnQ/bHlycz10QDEzMixyQDI4MDAwMDAwMFx1MDAyNnNyYz1hcGlcdTAwMjZobD1lbi1VU1x1MDAyNiJdLG51bGwsbnVsbCxudWxsLG51bGwsInRAMTMyLHJAMjgwMDAwMDAwIixbImh0dHBzOi8vbXRzMC5nb29nbGUuY29tL3Z0P2x5cnM9dEAxMzIsckAyODAwMDAwMDBcdTAwMjZzcmM9YXBpXHUwMDI2aGw9ZW4tVVNcdTAwMjYiLCJodHRwczovL210czEuZ29vZ2xlLmNvbS92dD9seXJzPXRAMTMyLHJAMjgwMDAwMDAwXHUwMDI2c3JjPWFwaVx1MDAyNmhsPWVuLVVTXHUwMDI2Il1dLG51bGwsbnVsbCxbWyJodHRwczovL2Nia3MwLmdvb2dsZWFwaXMuY29tL2Niaz8iLCJodHRwczovL2Nia3MxLmdvb2dsZWFwaXMuY29tL2Niaz8iXV0sW1siaHR0cHM6Ly9raG1zMC5nb29nbGVhcGlzLmNvbS9raD92PTg0XHUwMDI2aGw9ZW4tVVNcdTAwMjYiLCJodHRwczovL2tobXMxLmdvb2dsZWFwaXMuY29tL2toP3Y9ODRcdTAwMjZobD1lbi1VU1x1MDAyNiJdLG51bGwsbnVsbCxudWxsLG51bGwsIjg0IixbImh0dHBzOi8va2htczAuZ29vZ2xlLmNvbS9raD92PTg0XHUwMDI2aGw9ZW4tVVNcdTAwMjYiLCJodHRwczovL2tobXMxLmdvb2dsZS5jb20va2g/dj04NFx1MDAyNmhsPWVuLVVTXHUwMDI2Il1dLFtbImh0dHBzOi8vbXRzMC5nb29nbGVhcGlzLmNvbS9tYXBzbHQ/aGw9ZW4tVVNcdTAwMjYiLCJodHRwczovL210czEuZ29vZ2xlYXBpcy5jb20vbWFwc2x0P2hsPWVuLVVTXHUwMDI2Il1dLFtbImh0dHBzOi8vbXRzMC5nb29nbGVhcGlzLmNvbS9tYXBzbHQvZnQ/aGw9ZW4tVVNcdTAwMjYiLCJodHRwczovL210czEuZ29vZ2xlYXBpcy5jb20vbWFwc2x0L2Z0P2hsPWVuLVVTXHUwMDI2Il1dLFtbImh0dHBzOi8vbXRzMC5nb29nbGVhcGlzLmNvbS92dD9obD1lbi1VU1x1MDAyNiIsImh0dHBzOi8vbXRzMS5nb29nbGVhcGlzLmNvbS92dD9obD1lbi1VU1x1MDAyNiJdXSxbWyJodHRwczovL210czAuZ29vZ2xlYXBpcy5jb20vbWFwc2x0L2xvb20/aGw9ZW4tVVNcdTAwMjYiLCJodHRwczovL210czEuZ29vZ2xlYXBpcy5jb20vbWFwc2x0L2xvb20/aGw9ZW4tVVNcdTAwMjYiXV0sW1siaHR0cHM6Ly9tdHMwLmdvb2dsZWFwaXMuY29tL21hcHNsdD9obD1lbi1VU1x1MDAyNiIsImh0dHBzOi8vbXRzMS5nb29nbGVhcGlzLmNvbS9tYXBzbHQ/aGw9ZW4tVVNcdTAwMjYiXV0sW1siaHR0cHM6Ly9tdHMwLmdvb2dsZWFwaXMuY29tL21hcHNsdC9mdD9obD1lbi1VU1x1MDAyNiIsImh0dHBzOi8vbXRzMS5nb29nbGVhcGlzLmNvbS9tYXBzbHQvZnQ/aGw9ZW4tVVNcdTAwMjYiXV0sW1siaHR0cHM6Ly9tdHMwLmdvb2dsZWFwaXMuY29tL21hcHNsdC9sb29tP2hsPWVuLVVTXHUwMDI2IiwiaHR0cHM6Ly9tdHMxLmdvb2dsZWFwaXMuY29tL21hcHNsdC9sb29tP2hsPWVuLVVTXHUwMDI2Il1dXSxbImVuLVVTIiwiVVMiLG51bGwsMCxudWxsLG51bGwsImh0dHBzOi8vbWFwcy5nc3RhdGljLmNvbS9tYXBmaWxlcy8iLCJodHRwczovL2NzaS5nc3RhdGljLmNvbSIsImh0dHBzOi8vbWFwcy5nb29nbGVhcGlzLmNvbSIsImh0dHBzOi8vbWFwcy5nb29nbGVhcGlzLmNvbSIsbnVsbCwiaHR0cHM6Ly9tYXBzLmdvb2dsZS5jb20iXSxbImh0dHBzOi8vbWFwcy5nc3RhdGljLmNvbS9tYXBzLWFwaS12My9hcGkvanMvMTgvMTUiLCIzLjE4LjE1Il0sWzQ4NTcwODE1NF0sMSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIiIsbnVsbCxudWxsLDEsImh0dHBzOi8va2htcy5nb29nbGVhcGlzLmNvbS9tej92PTE2MVx1MDAyNiIsbnVsbCwiaHR0cHM6Ly9lYXJ0aGJ1aWxkZXIuZ29vZ2xlYXBpcy5jb20iLCJodHRwczovL2VhcnRoYnVpbGRlci5nb29nbGVhcGlzLmNvbSIsbnVsbCwiaHR0cHM6Ly9tdHMuZ29vZ2xlYXBpcy5jb20vdnQvaWNvbiIsW1siaHR0cHM6Ly9tdHMwLmdvb2dsZWFwaXMuY29tL3Z0IiwiaHR0cHM6Ly9tdHMxLmdvb2dsZWFwaXMuY29tL3Z0Il0sWyJodHRwczovL210czAuZ29vZ2xlYXBpcy5jb20vdnQiLCJodHRwczovL210czEuZ29vZ2xlYXBpcy5jb20vdnQiXSxbbnVsbCxbWzAsIm0iLDI4MDAwMDAwMF1dLFtudWxsLCJlbi1VUyIsIlVTIixudWxsLDE4LG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFtbNDddLFszNyxbWyJzbWFydG1hcHMiXV1dXV0sMF0sW251bGwsW1swLCJtIiwyODAwMDAwMDBdXSxbbnVsbCwiZW4tVVMiLCJVUyIsbnVsbCwxOCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxbWzQ3XSxbMzcsW1sic21hcnRtYXBzIl1dXV1dLDNdLFtudWxsLFtbMCwibSIsMjgwMDAwMDAwXV0sW251bGwsImVuLVVTIiwiVVMiLG51bGwsMTgsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsW1s1MF0sWzM3LFtbInNtYXJ0bWFwcyJdXV1dXSwwXSxbbnVsbCxbWzAsIm0iLDI4MDAwMDAwMF1dLFtudWxsLCJlbi1VUyIsIlVTIixudWxsLDE4LG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFtbNTBdLFszNyxbWyJzbWFydG1hcHMiXV1dXV0sM10sW251bGwsW1s0LCJ0IiwxMzJdLFswLCJyIiwxMzIwMDAwMDBdXSxbbnVsbCwiZW4tVVMiLCJVUyIsbnVsbCwxOCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxbWzYzXSxbMzcsW1sic21hcnRtYXBzIl1dXV1dLDBdLFtudWxsLFtbNCwidCIsMTMyXSxbMCwiciIsMTMyMDAwMDAwXV0sW251bGwsImVuLVVTIiwiVVMiLG51bGwsMTgsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsW1s2M10sWzM3LFtbInNtYXJ0bWFwcyJdXV1dXSwzXSxbbnVsbCxudWxsLFtudWxsLCJlbi1VUyIsIlVTIixudWxsLDE4XSwwXSxbbnVsbCxudWxsLFtudWxsLCJlbi1VUyIsIlVTIixudWxsLDE4XSwzXSxbbnVsbCxudWxsLFtudWxsLCJlbi1VUyIsIlVTIixudWxsLDE4XSw2XSxbbnVsbCxudWxsLFtudWxsLCJlbi1VUyIsIlVTIixudWxsLDE4XSwwXSxbImh0dHBzOi8vbXRzMC5nb29nbGUuY29tL3Z0IiwiaHR0cHM6Ly9tdHMxLmdvb2dsZS5jb20vdnQiXSwiL21hcHMvdnQiLDI4MDAwMDAwMCwxMzJdLDIsNTAwLFsiaHR0cHM6Ly9nZW8wLmdncGh0LmNvbS9jYmsiLCJodHRwczovL2cwLmdzdGF0aWMuY29tL2xhbmRtYXJrL3RvdXIiLCJodHRwczovL2cwLmdzdGF0aWMuY29tL2xhbmRtYXJrL2NvbmZpZyIsIiIsImh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9wcmV2aWV3L2xvZzIwNCIsIiIsImh0dHBzOi8vc3RhdGljLnBhbm9yYW1pby5jb20uc3RvcmFnZS5nb29nbGVhcGlzLmNvbS9waG90b3MvIl0sWyJodHRwczovL3d3dy5nb29nbGUuY29tL21hcHMvYXBpL2pzL21hc3Rlcj9wYj0hMW0yITF1MTghMnMxNSEyc2VuLVVTITNzVVMhNHMxOC8xNSIsImh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vbWFwcy9hcGkvanMvd2lkZ2V0P3BiPSExbTIhMXUxOCEyczE1ITJzZW4tVVMiXSwxLDBdLCBsb2FkU2NyaXB0VGltZSk7CiAgfTsKICB2YXIgbG9hZFNjcmlwdFRpbWUgPSAobmV3IERhdGUpLmdldFRpbWUoKTsKICBnZXRTY3JpcHQoImh0dHBzOi8vbWFwcy5nc3RhdGljLmNvbS9tYXBzLWFwaS12My9hcGkvanMvMTgvMTUvbWFpbi5qcyIpOwp9KSgpOwo="></script>
+    <script>
+      // When the window has finished loading create our google map below
+      google.maps.event.addDomListener(window, 'load', init);
+      function init() {
+      		var mapOptions = {
+      				zoom: 11,
+      				disableDefaultUI: true,
+      				center: new google.maps.LatLng(40.6700, -73.9400), // New York
+      				styles: [	{		featureType:'water',		stylers:[{color:'#46bcec'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#f2f2f2'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#444444'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+      		};
+      		var mapElement = document.getElementById('map-mini');
+      		var map = new google.maps.Map(mapElement, mapOptions);
+      }
+    </script>
   </head>
   <body>
-    <div class="header">
-      <div class="topper">
-        <div class="topper-in"><a href="#" class="logo">wash me</a>
-          <ul class="nav">
-            <li class="nav-item"> <a href="#" class="nav-link"><span class="nav-label">8</span><span class="nav-text">осталось</span></a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><i class="ico i-set"></i><span class="nav-text">моя мойка</span></a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><i class="ico i-exit"></i><span class="nav-text">выйти</span></a></li>
-          </ul>
+    <div class="animsition">
+      <div class="header">
+        <div class="topper">
+          <div class="topper-in"><a href="current_orders.html" class="logo animsition-link">wash me</a>
+            <ul class="nav">
+              <li class="nav-item"> <a href="#" class="nav-link"><span class="nav-label">8</span><span class="nav-text">осталось</span></a></li>
+              <li class="nav-item"><span class="nav-link m-settings is-active"><i class="ico i-set"></i><span class="nav-text">моя мойка</span></span></li>
+              <li class="nav-item"><a href="#" class="nav-link"><i class="ico i-exit"></i><span class="nav-text">выйти</span></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="page page-mod">
-      <div class="page-in">
-        <div class="grid">
-          <div class="grid-row">
-            <div class="grid-cell">
-              <div class="grid-content">
-                <div class="grid-content-in">
-                  <div class="wash"><a href="#" style="background-image: url(img/logo-car.png);" class="wash-logo"></a>
-                    <div class="wash-my">
-                      <div class="wash-my-title">AVTOSPA</div>
-                      <div class="wash-stars"><span class="star"><i class="star-active"></i><i class="star-active"></i><i class="star-active"></i><i class="star-active"></i><i class="star-unnactive"> </i><i class="star-summ">26</i></span></div>
-                    </div><a href="#" class="wash-red">Изменить лого </a><a href="#" class="wash-my-red js-send-red">Редактировать</a><a href="#" class="wash-my-save js-send-save">Сохранить</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-cell">
-              <div class="grid-content">
-                <div class="grid-content-in">
-                  <div class="wash-contacts">
-                    <div style="display: block;" class="wash-contacts-info">
-                      <div class="wash-contacts-item">
-                        <div class="wash-contacts-meta">Ул. Шверника 19</div>
-                        <div class="wash-contacts-detail">адрес</div>
-                      </div>
-                      <div class="wash-contacts-item">
-                        <div class="wash-contacts-meta">support@avtospa.ru</div>
-                        <div class="wash-contacts-detail">e-mail</div>
-                      </div>
-                      <div class="wash-contacts-item">
-                        <div class="wash-contacts-meta"><span class="small">+7 (916) </span><span>800 60 99</span></div>
-                        <div class="wash-contacts-detail">телефон</div>
-                      </div>
-                      <div class="wash-contacts-item">
-                        <div class="wash-contacts-meta">07 : 00 – 01 : 00</div>
-                        <div class="wash-contacts-detail">часы работы</div>
-                      </div>
-                    </div>
-                    <div style="display: none;" class="wash-contacts-red">
-                      <input type="text" placeholder="Адрес" class="wash-input">
-                      <input type="text" placeholder="E-mail" class="wash-input">
-                      <input type="text" placeholder="Телефон" class="wash-input">
-                      <input type="text" placeholder="Часы работы" class="wash-input">
+      <div class="page page-mod">
+        <div class="page-in">
+          <div class="grid">
+            <div class="grid-row m-first">
+              <div class="grid-cell">
+                <div class="grid-content">
+                  <div class="grid-content-in">
+                    <div class="wash"><a href="#" style="background-image: url(img/logo-car.png);" class="wash-logo"></a>
+                      <div class="wash-my">
+                        <div class="wash-my-title">AVTOSPA</div>
+                        <div class="wash-stars"><span class="star"><i class="star-active"></i><i class="star-active"></i><i class="star-active"></i><i class="star-active"></i><i class="star-unnactive"> </i><i class="star-summ">26</i></span></div>
+                      </div><a href="#" class="wash-red">Изменить лого </a><a href="#" class="wash-my-red js-send-red">Редактировать</a><a href="#" class="wash-my-save js-send-save">Сохранить</a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="grid-cell">
-              <div class="grid-content">
-                <div class="grid-content-in">
-                  <div class="wash-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2245.3065974063193!2d37.59397699999999!3d55.753175999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a4c82437f3f%3A0xab9c36caeb040d52!2z0YPQuy4g0J3QvtCy0YvQuSDQkNGA0LHQsNGCLCAxMCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDExOTAxOQ!5e0!3m2!1sru!2sua!4v1415857361329" width="100%" height="100%" frameborder="0" style="border: 0;"></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="grid-row">
-            <div class="grid-cell">
-              <div class="grid-content">
-                <div class="grid-content-in">
-                  <div class="wash-option">
-                    <div class="wash-option-meta">Дополнительные опции</div>
-                    <div style="display: block;" class="wash-option-active">
-                      <div class="wash-option-label">
-                        <div class="label"><i class="i-card ico"></i>
-                          <div class="label-descr">Оплата картой</div>
+              <div class="grid-cell">
+                <div class="grid-content">
+                  <div class="grid-content-in">
+                    <div class="wash-contacts">
+                      <div style="display: block;" class="wash-contacts-info">
+                        <div class="wash-contacts-item">
+                          <div class="wash-contacts-meta">Ул. Шверника 19</div>
+                          <div class="wash-contacts-detail">адрес</div>
                         </div>
-                        <div class="label"><i class="i-wifi ico"></i>
-                          <div class="label-descr">Wi-Fi</div>
+                        <div class="wash-contacts-item">
+                          <div class="wash-contacts-meta">support@avtospa.ru</div>
+                          <div class="wash-contacts-detail">e-mail</div>
                         </div>
-                        <div class="label"><i class="i-coffee ico"></i>
-                          <div class="label-descr">Кафе</div>
+                        <div class="wash-contacts-item">
+                          <div class="wash-contacts-meta"><span class="small">+7 (916) </span><span>800 60 99</span></div>
+                          <div class="wash-contacts-detail">телефон</div>
                         </div>
-                        <div class="label"><i class="i-sofa ico"></i>
-                          <div class="label-descr">Комната отдыха</div>
-                        </div>
-                        <div class="label"><i class="i-settings ico"></i>
-                          <div class="label-descr">Шиномонтаж</div>
+                        <div class="wash-contacts-item">
+                          <div class="wash-contacts-meta">07 : 00 – 01 : 00</div>
+                          <div class="wash-contacts-detail">часы работы</div>
                         </div>
                       </div>
-                      <div class="wash-option-note">
-                        <div class="wash-option-note-title">Ручная, Самообслуживание</div>
-                        <div class="wash-option-meta">тип мойки</div>
-                      </div>
-                    </div>
-                    <div style="display: none;" class="wash-option-readme">
-                      <div class="ch-wrap">
-                        <div class="ch-col">
-                          <div class="ch-row">
-                            <label class="checkbox">
-                              <input type="checkbox" value="" checked><span>Оплата картой<i class="checkbox-ico"></i></span>
-                            </label>
-                          </div>
-                          <div class="ch-row">
-                            <label class="checkbox">
-                              <input type="checkbox" value="" checked><span>Кафе<i class="checkbox-ico"></i></span>
-                            </label>
-                          </div>
-                          <div class="ch-row">
-                            <label class="checkbox">
-                              <input type="checkbox" value="" checked><span>Wi-fi<i class="checkbox-ico"></i></span>
-                            </label>
-                          </div>
-                          <div class="ch-row">
-                            <label class="checkbox">
-                              <input type="checkbox" value=""><span>Комната отдыха<i class="checkbox-ico"></i></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="ch-col">
-                          <div class="ch-row">
-                            <label class="checkbox">
-                              <input type="checkbox" value=""><span>Шиномонтаж<i class="checkbox-ico"></i></span>
-                            </label>
-                          </div>
-                          <div class="ch-row">
-                            <label class="checkbox">
-                              <input type="checkbox" value="" checked><span>Магазин<i class="checkbox-ico"></i></span>
-                            </label>
-                          </div>
-                          <div class="ch-row">
-                            <label class="checkbox">
-                              <input type="checkbox" value=""><span>Заправка<i class="checkbox-ico"> </i></span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="ch-wrap">
-                        <div class="ch-title">Тип мойки</div>
-                        <div class="ch-col">
-                          <div class="ch-row">
-                            <label class="checkbox">
-                              <input type="checkbox" value="" checked><span>Ручная<i class="checkbox-ico"></i></span>
-                            </label>
-                          </div>
-                          <div class="ch-row">
-                            <label class="checkbox">
-                              <input type="checkbox" value="" checked><span>Самообслуживание<i class="checkbox-ico"> </i></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="ch-col">
-                          <div class="ch-row">
-                            <label class="checkbox">
-                              <input type="checkbox" value=""><span>Мобильная<i class="checkbox-ico"></i></span>
-                            </label>
-                          </div>
-                          <div class="ch-row">
-                            <label class="checkbox">
-                              <input type="checkbox" value=""><span>Автоматическая<i class="checkbox-ico"> </i></span>
-                            </label>
-                          </div>
-                        </div>
+                      <div style="display: none;" class="wash-contacts-red">
+                        <input type="text" placeholder="Адрес" class="wash-input">
+                        <input type="text" placeholder="E-mail" class="wash-input">
+                        <input type="text" placeholder="Телефон" class="wash-input">
+                        <input type="text" placeholder="Часы работы" class="wash-input">
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="grid-cell">
-              <div class="grid-content">
-                <div class="grid-content-in">
-                  <div class="wash-plan">
-                    <div class="wash-plan-topper">
-                      <div class="wash-plan-title">Стандарт</div>
-                      <div class="wash-plan-meta">осталось 10 дней</div>
+              <div class="grid-cell">
+                <div class="grid-content">
+                  <div class="grid-content-in">
+                    <div class="wash-map">
+                      <div id="map-mini"></div>
                     </div>
-                    <div class="wash-plan-price"><span class="summ">1000 </span><span class="price"></span><span class="meta">/ мес</span></div>
-                    <div class="wash-plan-item"><span class="infinite">∞</span><span>прямых заказов</span></div>
-                    <div class="wash-plan-item"><span class="num">25</span><span>дополнительных заказов</span></div><a href="#" class="wash-plan-btn">Изменить тарифный план</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="grid-cell">
-              <div class="grid-content">
-                <div class="grid-content-in">
-                  <div class="wash-pass">
-                    <div class="wash-pass-title">Изменить пароль</div>
-                    <input type="text" placeholder="Старый пароль" class="wash-input">
-                    <input type="text" placeholder="Новый пароль" class="wash-input">
-                    <input type="text" placeholder="Подтвердите" class="wash-input"><a href="#" class="wash-pass-btn">Изменить пароль</a>
+            <div class="grid-row m-last">
+              <div class="grid-cell">
+                <div class="grid-content">
+                  <div class="grid-content-in">
+                    <div class="wash-option">
+                      <div class="wash-option-meta">Дополнительные опции</div>
+                      <div style="display: block;" class="wash-option-active">
+                        <div class="wash-option-label">
+                          <div class="label"><i class="i-card ico"></i>
+                            <div class="label-descr">Оплата картой</div>
+                          </div>
+                          <div class="label"><i class="i-wifi ico"></i>
+                            <div class="label-descr">Wi-Fi</div>
+                          </div>
+                          <div class="label"><i class="i-coffee ico"></i>
+                            <div class="label-descr">Кафе</div>
+                          </div>
+                          <div class="label"><i class="i-sofa ico"></i>
+                            <div class="label-descr">Комната отдыха</div>
+                          </div>
+                          <div class="label"><i class="i-settings ico"></i>
+                            <div class="label-descr">Шиномонтаж</div>
+                          </div>
+                        </div>
+                        <div class="wash-option-note">
+                          <div class="wash-option-note-title">Ручная, Самообслуживание</div>
+                          <div class="wash-option-meta">тип мойки</div>
+                        </div>
+                      </div>
+                      <div style="display: none;" class="wash-option-readme">
+                        <div class="ch-wrap">
+                          <div class="ch-col">
+                            <div class="ch-row">
+                              <label class="checkbox">
+                                <input type="checkbox" value="" checked><span>Оплата картой<i class="checkbox-ico"></i></span>
+                              </label>
+                            </div>
+                            <div class="ch-row">
+                              <label class="checkbox">
+                                <input type="checkbox" value="" checked><span>Кафе<i class="checkbox-ico"></i></span>
+                              </label>
+                            </div>
+                            <div class="ch-row">
+                              <label class="checkbox">
+                                <input type="checkbox" value="" checked><span>Wi-fi<i class="checkbox-ico"></i></span>
+                              </label>
+                            </div>
+                            <div class="ch-row">
+                              <label class="checkbox">
+                                <input type="checkbox" value=""><span>Комната отдыха<i class="checkbox-ico"></i></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="ch-col">
+                            <div class="ch-row">
+                              <label class="checkbox">
+                                <input type="checkbox" value=""><span>Шиномонтаж<i class="checkbox-ico"></i></span>
+                              </label>
+                            </div>
+                            <div class="ch-row">
+                              <label class="checkbox">
+                                <input type="checkbox" value="" checked><span>Магазин<i class="checkbox-ico"></i></span>
+                              </label>
+                            </div>
+                            <div class="ch-row">
+                              <label class="checkbox">
+                                <input type="checkbox" value=""><span>Заправка<i class="checkbox-ico"> </i></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ch-wrap">
+                          <div class="ch-title">Тип мойки</div>
+                          <div class="ch-col">
+                            <div class="ch-row">
+                              <label class="checkbox">
+                                <input type="checkbox" value="" checked><span>Ручная<i class="checkbox-ico"></i></span>
+                              </label>
+                            </div>
+                            <div class="ch-row">
+                              <label class="checkbox">
+                                <input type="checkbox" value="" checked><span>Самообслуживание<i class="checkbox-ico"> </i></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="ch-col">
+                            <div class="ch-row">
+                              <label class="checkbox">
+                                <input type="checkbox" value=""><span>Мобильная<i class="checkbox-ico"></i></span>
+                              </label>
+                            </div>
+                            <div class="ch-row">
+                              <label class="checkbox">
+                                <input type="checkbox" value=""><span>Автоматическая<i class="checkbox-ico"> </i></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-cell">
+                <div class="grid-content">
+                  <div class="grid-content-in">
+                    <div class="wash-plan">
+                      <div class="wash-plan-topper">
+                        <div class="wash-plan-title">Стандарт</div>
+                        <div class="wash-plan-meta">осталось 10 дней</div>
+                      </div>
+                      <div class="wash-plan-price"><span class="summ">1000 </span><span class="price"></span><span class="meta">/ мес</span></div>
+                      <div class="wash-plan-item"><span class="infinite">∞</span><span>прямых заказов</span></div>
+                      <div class="wash-plan-item"><span class="num">25</span><span>дополнительных заказов</span></div><a href="tarif.html" data-animsition-out="rotate-out" data-animsition-out-duration="500" class="animsition-link wash-plan-btn">Изменить тарифный план</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-cell">
+                <div class="grid-content">
+                  <div class="grid-content-in">
+                    <div class="wash-pass">
+                      <div class="wash-pass-title">Изменить пароль</div>
+                      <input type="text" placeholder="Старый пароль" class="wash-input">
+                      <input type="text" placeholder="Новый пароль" class="wash-input">
+                      <input type="text" placeholder="Подтвердите" class="wash-input"><a href="#" class="wash-pass-btn">Изменить пароль</a>
+                    </div>
                   </div>
                 </div>
               </div>

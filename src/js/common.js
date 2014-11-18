@@ -7,10 +7,24 @@ head.ready(function() {
   }
   indexHeight();
 
-  $('.js-hide').on('click', function() {
-    $(this).parent().addClass('bounceOutLeft').addClass('fadeOutLeft');
-    var element = $(this);
-    imgTimeout = setTimeout(function(){element.parent().css('display','none');}, 1500); 
+  // $('.js-hide').on('click', function() {
+    // $(this).parent().addClass('bounceOutLeft').addClass('fadeOutLeft');
+    // var element = $(this);
+    // imgTimeout = setTimeout(function(){element.parent().css('display','none');}, 1500); 
+
+  // });
+
+  $('.js-send-remove-popup').on('click', function() {
+    // получили отрибут текущего order
+    var getAttr = $(this)
+    // открытие попапа
+    $('.js-remove-popup').addClass('js-popup-open').addClass('fadeIn').children('.popup').addClass('bounceInDown');
+    // закрытие текущего order при клике на "удалить" в попапе
+    $('.js-hide').on('click', function(event) {
+      var element = getAttr;
+      element.parent().addClass('bounceOutLeft').addClass('fadeOutLeft');
+      imgTimeout = setTimeout(function(){element.parent().css('display','none');}, 1500); 
+    });
   });
 
   // popup
@@ -23,6 +37,7 @@ head.ready(function() {
     $('.js-popup-2').addClass('js-popup-open').addClass('fadeIn').children('.popup').addClass('bounceInDown');
     return false;
   }); 
+
 
 $('.popup-out').on('click', function() {
   $(this).removeClass('js-popup-open').removeClass('fadeIn').children('.popup').removeClass('bounceInDown');
@@ -64,16 +79,18 @@ $('.popup').on('click', function(e) {
     position: 'bottom',
     contentAsHTML: true
   });
-
-
-
-
-  $('.js-tooltipster-hover').tooltipster();
-
   $(window).keypress(function() {
     $('.js-tooltipster').tooltipster('hide');
      $('.order-add').removeClass('is-active');
   });
+
+  $('.js-tooltipster-hover').tooltipster({
+    trigger: 'hover',
+    position: 'bottom',
+    interactive: true,
+    contentAsHTML: true
+  });
+
 
   $('.js-send-red').on('click', function() {
     $('.wash-contacts-info').hide();
@@ -101,7 +118,39 @@ $('.popup').on('click', function(e) {
   $(window).resize(function(){
     headerAbsolute();
   });
+
+  $(function() {
+   $('.wash-input').placeholder();
+  });  
+
+  $(".animsition").animsition({
+  
+    inClass               :   'fade-in-up',
+    outClass              :   'fade-out-up',
+    inDuration            :    1250,
+    outDuration           :    800,
+    linkElement           :   '.animsition-link', 
+    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+    loading               :    false,
+    loadingParentElement  :   'body', //animsition wrapper element
+    loadingClass          :   'animsition-loading',
+    unSupportCss          : [ 'animation-duration',
+                              '-webkit-animation-duration',
+                              '-o-animation-duration'
+                            ],
+    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser. 
+    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    
+    overlay               :   false,
+    
+    overlayClass          :   'animsition-overlay-slide',
+    overlayParentElement  :   'body'
+  });
+
 });
+
+
+
 
 function headerAbsolute() {
   if ($(window).width() <= 1330) {

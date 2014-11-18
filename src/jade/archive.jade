@@ -4,347 +4,360 @@
 doctype html
 
 html
-	include includes/head.jade 
-	body
-		.header
-			.topper
-				.topper-in
-					a(href="#").logo
-						|wash me
-					ul.nav
-						li.nav-item 
-							a(href="#").nav-link
-								span.nav-label
-									|8
-								span.nav-text
-									|осталось
-						li.nav-item
-							a(href="#").nav-link
-								i.ico.i-set
-								span.nav-text
-									|моя мойка
-						li.nav-item
-							a(href="#").nav-link
-								i.ico.i-exit
-								span.nav-text
-									|выйти
-			.top.m-left
-				.top-in.m-archive
-					ul.status-list
-						li.status-list-item
-							a(href="#").status-list-link
-								span.status-list-link-descr Принятых заказов
-								span.status-list-link-num 143
-						li.status-list-item
-							a(href="#").status-list-link
-								span.status-list-link-descr Выполнено
-								span.status-list-link-num 135
-						li.status-list-item
-							a(href="#").status-list-link
-								span.status-list-link-descr Текущих
-								span.status-list-link-num 3
-						li.status-list-item
-							a(href="#").status-list-link
-								span.status-list-link-descr Отменено
-								span.status-list-link-num 5
-					ul.top-list
-						li.top-list-item
-							a(href="#").top-link
-								span.top-link-note Отменено 
-								span.top-link-num 5
-						li.top-list-item
-							a(href="#").top-link
-								span.top-link-note Текущие заказы
-								span.top-link-num 6
-						li.top-list-item
-							a(href="#").top-link.is-sexy
-								span.top-link-note Журнал
-		.page.js-set-height.js-scroll
-			.page-in
-				ul.order.m-archive
-					li.order-item.bounceInLeft.animated.s2
-						.order-item-date
-							.order-item-date-num 26
-							.order-item-date-mount сен
-						.order-item-time.m-interval
-							.order-item-time-item
-								.order-item-time-time 22 : 30
-								.order-item-time-note начало
-							.order-item-time-item
-								.order-item-time-time 22 : 30
-								.order-item-time-note конец
-						.order-item-car
-							.order-item-car-item
-								.order-item-car-item-model
-									span.order-item-car-model Jaguar 
-									span.order-item-car-type XKR
-								.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
-									i.order-add-ico
-							.order-item-car-owner 
-								span.order-item-car-owner-name Обама Барак
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-box
-							.order-item-box-number e 007 кх 777
-							.order-item-box-title Бокс 3
-						.order-item-tel
-							.order-item-tel-number
-								span.small +7 (916) 
-								| 800 60 99
-							.order-item-tel-descr Телефон
-						.order-item-info
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number 
-										span.order-item-info-tel-meta Отзыв клиента
-										span.star
-											i.star-active
-											i.star-active
-											i.star-active
-											i.star-active
-											i.star-unnactive
-											i.star-select
-									.order-item-info-tel-descr.m-elipsis.js-tooltipster-hover(title="Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме") Качество мойки – отличное, но Wi-Fi бы не поме ...
-						.order-item-state.m-ok
-					li.order-item.bounceInLeft.animated.s1-5
-						.order-item-date
-							.order-item-date-num 26
-							.order-item-date-mount сен
-						.order-item-time.m-interval
-							.order-item-time-item
-								.order-item-time-time 22 : 00
-								.order-item-time-note начало
-							.order-item-time-item
-								.order-item-time-time 21 : 30
-								.order-item-time-note конец
-						.order-item-car
-							.order-item-car-item
-								.order-item-car-item-model
-									span.order-item-car-model Mercedes-Benz
-									span.order-item-car-type AMG GT I
-								.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
-									i.order-add-ico
-							.order-item-car-owner 
-								span.order-item-car-owner-name Пантелеймон Константинопольский
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-box
-							.order-item-box-number о 123 о 97
-							.order-item-box-title Бокс 2
-						.order-item-tel
-							.order-item-tel-number
-								span.small +7 (926) 
-								| 456 30 67
-							.order-item-tel-descr Телефон
-						.order-item-info
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number 
-										span.order-item-info-tel-meta Отзыв клиента
-										span.star
-											i.star-active
-											i.star-unnactive
-											i.star-unnactive
-											i.star-unnactive
-											i.star-unnactive
-									.order-item-info-tel-descr.m-elipsis.js-tooltipster-hover(title="Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме") Качество мойки – отличное, но Wi-Fi бы не поме ... Помыли отвратительно, вся машина в разводах ...
-						.order-item-state.m-ok
-					li.order-item.bounceInLeft.animated
-						.order-item-date
-							.order-item-date-num 25
-							.order-item-date-mount сен
-						.order-item-time.m-interval
-							.order-item-time-item
-								.order-item-time-time 18 : 00
-								.order-item-time-note начало
-							.order-item-time-item
-								.order-item-time-time 18 : 30
-								.order-item-time-note конец
-						.order-item-car
-							.order-item-car-item
-								.order-item-car-item-model
-									span.order-item-car-model Lamborghini
-									span.order-item-car-type Aventador
-								.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
-									i.order-add-ico
-							.order-item-car-owner 
-								span.order-item-car-owner-name Владимир Путин
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-box
-							.order-item-box-number м 001 мм 777
-							.order-item-box-title Бокс 3
-						.order-item-tel
-							.order-item-tel-number
-								span.small +7 (906) 
-								| 540 00 00
-							.order-item-tel-descr Телефон
-						.order-item-info
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number 
-										span.order-item-info-tel-meta Отзыв клиента
-										span.star
-											i.star-active
-											i.star-active
-											i.star-active
-											i.star-active
-											i.star-unnactive
-											i.star-select
-									.order-item-info-tel-descr.m-elipsis.js-tooltipster-hover(title="Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме") Качество мойки – отличное, но Wi-Fi бы не поме ... Помыли отвратительно, вся машина в разводах ...
-						.order-item-state.m-ok
-					li.order-item.bounceInLeft.animated.s1-5
-						.order-item-date
-							.order-item-date-num 19
-							.order-item-date-mount сен
-						.order-item-time.m-interval
-							.order-item-time-item
-								.order-item-time-time 08 : 00
-								.order-item-time-note начало
-							.order-item-time-item
-								.order-item-time-time 08 : 30
-								.order-item-time-note конец
-						.order-item-car
-							.order-item-car-item
-								.order-item-car-item-model
-									span.order-item-car-model Volkswagen
-									span.order-item-car-type Passat CC
-								.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
-									i.order-add-ico
-							.order-item-car-owner 
-								span.order-item-car-owner-name Ангела Меркель
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-box
-							.order-item-box-number к 356 ен 99
-							.order-item-box-title Бокс 2
-						.order-item-tel
-							.order-item-tel-number
-								span.small +7 (916)
-								| 560 79 87
-							.order-item-tel-descr Телефон
-						.order-item-info
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number 
-										span.order-item-info-tel-meta Отзыв клиента
-										span.star
-											i.star-unnactive
-											i.star-unnactive
-											i.star-unnactive
-											i.star-unnactive
-											i.star-unnactive
-									.order-item-info-tel-descr.m-elipsis Нет комментариев
-						.order-item-state.m-del.js-hide
-					li.order-item.bounceInLeft.animated.s2
-						.order-item-date
-							.order-item-date-num 19
-							.order-item-date-mount сен
-						.order-item-time.m-interval
-							.order-item-time-item
-								.order-item-time-time 07 : 30
-								.order-item-time-note начало
-							.order-item-time-item
-								.order-item-time-time 08 : 00
-								.order-item-time-note конец
-						.order-item-car
-							.order-item-car-item
-								.order-item-car-item-model
-									span.order-item-car-model Porsche 
-									span.order-item-car-type Panamera
-								.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
-									i.order-add-ico
-							.order-item-car-owner 
-								span.order-item-car-owner-name Билл Гейтс
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-box
-							.order-item-box-number о 100 о 777
-							.order-item-box-title Бокс 2
-						.order-item-tel
-							.order-item-tel-number
-								span.small +7 (926)
-								| 000 90 99
-							.order-item-tel-descr Телефон
-						.order-item-info
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number 
-										span.order-item-info-tel-meta Отзыв клиента
-										span.star
-											i.star-unnactive
-											i.star-unnactive
-											i.star-unnactive
-											i.star-unnactive
-											i.star-unnactive
-									.order-item-info-tel-descr.m-elipsis Нет комментариев
-						.order-item-state.m-del.js-hide
-					li.order-item.bounceInLeft.animated
-						.order-item-date
-							.order-item-date-num 18
-							.order-item-date-mount сен
-						.order-item-time.m-interval
-							.order-item-time-item
-								.order-item-time-time 18 : 00
-								.order-item-time-note начало
-							.order-item-time-item
-								.order-item-time-time 18 : 30
-								.order-item-time-note конец
-						.order-item-car
-							.order-item-car-item
-								.order-item-car-item-model
-									span.order-item-car-model Lexus
-									span.order-item-car-type IS
-								.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
-									i.order-add-ico
-							.order-item-car-owner 
-								span.order-item-car-owner-name Абдулла ибн Абдель Азиз аль-Сауд
-								span.star
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-active
-									i.star-unnactive
-						.order-item-box
-							.order-item-box-number м 002 мм 97
-							.order-item-box-title Бокс 3
-						.order-item-tel
-							.order-item-tel-number
-								span.small +7 (906)
-								| 666 66 66
-							.order-item-tel-descr Телефон
-						.order-item-info
-							.order-item-info-left
-								.order-item-info-tel
-									.order-item-info-tel-number 
-										span.order-item-info-tel-meta Отзыв клиента
-										span.star
-											i.star-active
-											i.star-active
-											i.star-active
-											i.star-active
-											i.star-unnactive
-											i.star-select
-									.order-item-info-tel-descr.m-elipsis.js-tooltipster-hover(title="Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме") Качество мойки – отличное, но Wi-Fi бы не поме ... Качество мойки – отличное, но Wi-Fi бы не поме ...
-						.order-item-state.m-ok
+	include includes/head.jade
+	body.m-archive
+		.animsition
+			.header
+				.topper
+					.topper-in
+						a(href="current_orders.html").logo.animsition-link
+							|wash me
+						ul.nav
+							li.nav-item 
+								a(href="#").nav-link
+									span.nav-label
+										|8
+									span.nav-text
+										|осталось
+							li.nav-item
+								a(href="wash.html").nav-link.animsition-link
+									i.ico.i-set
+									span.nav-text
+										|моя мойка
+							li.nav-item
+								a(href="#").nav-link
+									i.ico.i-exit
+									span.nav-text
+										|выйти
+				.top.m-left
+					.top-in.m-archive
+						ul.status-list
+							li.status-list-item
+								a(href="#").status-list-link
+									span.status-list-link-descr Принятых заказов
+									span.status-list-link-num 143
+							li.status-list-item
+								a(href="#").status-list-link.is-arr
+									span.status-list-link-descr Выполнено
+									span.status-list-link-num 135
+							li.status-list-item
+								a(href="#").status-list-link
+									span.status-list-link-descr Текущих
+									span.status-list-link-num 3
+							li.status-list-item
+								a(href="#").status-list-link
+									span.status-list-link-descr Отменено
+									span.status-list-link-num 5
+						ul.top-list
+							li.top-list-item
+								a(href="#").top-link
+									span.top-link-note Отменено 
+									span.top-link-num 5
+							li.top-list-item
+								a(href="current_orders.html", data-animsition-out='fade-out-down', data-animsition-out-duration='500').animsition-link.top-link
+									span.top-link-note Текущие заказы
+									span.top-link-num 6
+							li.top-list-item
+								span.top-link.is-sexy
+									span.top-link-note Журнал
+			.page.js-set-height-scroll.js-scroll
+				.page-in
+					ul.order.m-archive
+						li.order-item.bounceInLeft.animated.s2
+							.order-item-date
+								.order-item-date-num 26
+								.order-item-date-mount сен
+							.order-item-time.m-interval
+								.order-item-time-item
+									.order-item-time-time 22 : 30
+									.order-item-time-note начало
+								.order-item-time-item
+									.order-item-time-time 22 : 30
+									.order-item-time-note конец
+							.order-item-car
+								.order-item-car-item
+									.order-item-car-item-model
+										span.order-item-car-model Jaguar 
+										span.order-item-car-type XKR
+									.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
+										i.order-add-ico
+								.order-item-car-owner 
+									span.order-item-car-owner-name Обама Барак
+									span.star
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-unnactive
+							.order-item-box
+								.order-item-box-number e 007 кх 777
+								.order-item-box-title Бокс 3
+							.order-item-tel
+								.order-item-tel-number
+									span.small +7 (916) 
+									| 800 60 99
+								.order-item-tel-descr Телефон
+							.order-item-info
+								.order-item-info-left
+									.order-item-info-tel
+										.order-item-info-tel-number 
+											span.order-item-info-tel-meta Отзыв клиента
+											span.star
+												i.star-active
+												i.star-active
+												i.star-active
+												i.star-active
+												i.star-unnactive
+												i.star-select
+										.order-item-info-tel-descr.m-elipsis.js-tooltipster-hover(title="Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме") Качество мойки – отличное, но Wi-Fi бы не поме ...
+							.order-item-state.m-ok
+						li.order-item.bounceInLeft.animated.s1-5
+							.order-item-date
+								.order-item-date-num 26
+								.order-item-date-mount сен
+							.order-item-time.m-interval
+								.order-item-time-item
+									.order-item-time-time 22 : 00
+									.order-item-time-note начало
+								.order-item-time-item
+									.order-item-time-time 21 : 30
+									.order-item-time-note конец
+							.order-item-car
+								.order-item-car-item
+									.order-item-car-item-model
+										span.order-item-car-model Mercedes-Benz
+										span.order-item-car-type AMG GT I
+									.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
+										i.order-add-ico
+								.order-item-car-owner 
+									span.order-item-car-owner-name Пантелеймон Константинопольский
+									span.star
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-unnactive
+							.order-item-box
+								.order-item-box-number о 123 о 97
+								.order-item-box-title Бокс 2
+							.order-item-tel
+								.order-item-tel-number
+									span.small +7 (926) 
+									| 456 30 67
+								.order-item-tel-descr Телефон
+							.order-item-info
+								.order-item-info-left
+									.order-item-info-tel
+										.order-item-info-tel-number 
+											span.order-item-info-tel-meta Отзыв клиента
+											span.star
+												i.star-active
+												i.star-unnactive
+												i.star-unnactive
+												i.star-unnactive
+												i.star-unnactive
+										.order-item-info-tel-descr.m-elipsis.js-tooltipster-hover(title="Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме") Качество мойки – отличное, но Wi-Fi бы не поме ... Помыли отвратительно, вся машина в разводах ...
+							.order-item-state.m-ok
+						li.order-item.bounceInLeft.animated
+							.order-item-date
+								.order-item-date-num 25
+								.order-item-date-mount сен
+							.order-item-time.m-interval
+								.order-item-time-item
+									.order-item-time-time 18 : 00
+									.order-item-time-note начало
+								.order-item-time-item
+									.order-item-time-time 18 : 30
+									.order-item-time-note конец
+							.order-item-car
+								.order-item-car-item
+									.order-item-car-item-model
+										span.order-item-car-model Lamborghini
+										span.order-item-car-type Aventador
+									.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
+										i.order-add-ico
+								.order-item-car-owner 
+									span.order-item-car-owner-name Владимир Путин
+									span.star
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-unnactive
+							.order-item-box
+								.order-item-box-number м 001 мм 777
+								.order-item-box-title Бокс 3
+							.order-item-tel
+								.order-item-tel-number
+									span.small +7 (906) 
+									| 540 00 00
+								.order-item-tel-descr Телефон
+							.order-item-info
+								.order-item-info-left
+									.order-item-info-tel
+										.order-item-info-tel-number 
+											span.order-item-info-tel-meta Отзыв клиента
+											span.star
+												i.star-active
+												i.star-active
+												i.star-active
+												i.star-active
+												i.star-unnactive
+												i.star-select
+										.order-item-info-tel-descr.m-elipsis.js-tooltipster-hover(title="Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме") Качество мойки – отличное, но Wi-Fi бы не поме ... Помыли отвратительно, вся машина в разводах ...
+							.order-item-state.m-ok
+						li.order-item.bounceInLeft.animated.s1-5
+							.order-item-date
+								.order-item-date-num 19
+								.order-item-date-mount сен
+							.order-item-time.m-interval
+								.order-item-time-item
+									.order-item-time-time 08 : 00
+									.order-item-time-note начало
+								.order-item-time-item
+									.order-item-time-time 08 : 30
+									.order-item-time-note конец
+							.order-item-car
+								.order-item-car-item
+									.order-item-car-item-model
+										span.order-item-car-model Volkswagen
+										span.order-item-car-type Passat CC
+									.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
+										i.order-add-ico
+								.order-item-car-owner 
+									span.order-item-car-owner-name Ангела Меркель
+									span.star
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-unnactive
+							.order-item-box
+								.order-item-box-number к 356 ен 99
+								.order-item-box-title Бокс 2
+							.order-item-tel
+								.order-item-tel-number
+									span.small +7 (916)
+									| 560 79 87
+								.order-item-tel-descr Телефон
+							.order-item-info
+								.order-item-info-left
+									.order-item-info-tel
+										.order-item-info-tel-number 
+											span.order-item-info-tel-meta Отзыв клиента
+											span.star
+												i.star-unnactive
+												i.star-unnactive
+												i.star-unnactive
+												i.star-unnactive
+												i.star-unnactive
+										.order-item-info-tel-descr.m-elipsis Нет комментариев
+							.order-item-state.m-del.js-send-remove-popup(data="order1")
+						li.order-item.bounceInLeft.animated.s2
+							.order-item-date
+								.order-item-date-num 19
+								.order-item-date-mount сен
+							.order-item-time.m-interval
+								.order-item-time-item
+									.order-item-time-time 07 : 30
+									.order-item-time-note начало
+								.order-item-time-item
+									.order-item-time-time 08 : 00
+									.order-item-time-note конец
+							.order-item-car
+								.order-item-car-item
+									.order-item-car-item-model
+										span.order-item-car-model Porsche 
+										span.order-item-car-type Panamera
+									.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
+										i.order-add-ico
+								.order-item-car-owner 
+									span.order-item-car-owner-name Билл Гейтс
+									span.star
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-unnactive
+							.order-item-box
+								.order-item-box-number о 100 о 777
+								.order-item-box-title Бокс 2
+							.order-item-tel
+								.order-item-tel-number
+									span.small +7 (926)
+									| 000 90 99
+								.order-item-tel-descr Телефон
+							.order-item-info
+								.order-item-info-left
+									.order-item-info-tel
+										.order-item-info-tel-number 
+											span.order-item-info-tel-meta Отзыв клиента
+											span.star
+												i.star-unnactive
+												i.star-unnactive
+												i.star-unnactive
+												i.star-unnactive
+												i.star-unnactive
+										.order-item-info-tel-descr.m-elipsis Нет комментариев
+							.order-item-state.m-del.js-send-remove-popup(data="order2")
+						li.order-item.bounceInLeft.animated
+							.order-item-date
+								.order-item-date-num 18
+								.order-item-date-mount сен
+							.order-item-time.m-interval
+								.order-item-time-item
+									.order-item-time-time 18 : 00
+									.order-item-time-note начало
+								.order-item-time-item
+									.order-item-time-time 18 : 30
+									.order-item-time-note конец
+							.order-item-car
+								.order-item-car-item
+									.order-item-car-item-model
+										span.order-item-car-model Lexus
+										span.order-item-car-type IS
+									.order-add.js-tooltipster(title="<i class='i-coffee-bl ico'></i><i class='i-wifi-bl ico'></i><i class='i-card-bl ico'></i>")
+										i.order-add-ico
+								.order-item-car-owner 
+									span.order-item-car-owner-name Абдулла ибн Абдель Азиз аль-Сауд
+									span.star
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-active
+										i.star-unnactive
+							.order-item-box
+								.order-item-box-number м 002 мм 97
+								.order-item-box-title Бокс 3
+							.order-item-tel
+								.order-item-tel-number
+									span.small +7 (906)
+									| 666 66 66
+								.order-item-tel-descr Телефон
+							.order-item-info
+								.order-item-info-left
+									.order-item-info-tel
+										.order-item-info-tel-number 
+											span.order-item-info-tel-meta Отзыв клиента
+											span.star
+												i.star-active
+												i.star-active
+												i.star-active
+												i.star-active
+												i.star-unnactive
+												i.star-select
+										.order-item-info-tel-descr.m-elipsis.js-tooltipster-hover(title="Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме Качество мойки – отличное, но Wi-Fi бы не поме") Качество мойки – отличное, но Wi-Fi бы не поме ... Качество мойки – отличное, но Wi-Fi бы не поме ...
+							.order-item-state.m-ok
+			.popup-out.m-remove.animated.js-remove-popup
+				.popup.animated
+					.popup-order
+						h4.popup-title
+							| Подтвердите удаление заказа
+					.popup-action
+						a.popup-action-cancel.js-popup-close(href="#")
+							i.popup-action-cancel-ico
+							| отмена
+						a.popup-action-end.js-popup-close.js-hide(href="#")
+							i.popup-action-end-ico
+							| удалить
 		script(data-headjs-load='js/init.js', src='js/lib/head.js') 

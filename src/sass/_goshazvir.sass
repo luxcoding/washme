@@ -70,12 +70,25 @@
 			font-size: 12px
 			+light
 	.order-item-time
+		width: 116px
 		height: 106px 
-		background: url("../img/time-bg.png")
-		+cover
-		background-position: 50% top
+		// background: url("../img/time-bg.png")
+		// +cover
+		// background-position: 50% top
+		background: #F5F7F7 
 		color: $blue2
 		text-align: center
+		position: relative
+		+light
+		&:before
+			content: ""
+			width: 116px
+			height: 106px
+			background: url("../img/time-bg.png")
+			position: absolute
+			bottom: 0
+			right: 0
+			z-index: 1
 		&.m-interval
 			.order-item-time-item
 				display: inline-block
@@ -83,12 +96,19 @@
 				margin-left: 20px
 				&:first-child
 					margin-left: 0
+		.order-item-time-item
+			position: relative
+			z-index: 100
 		.order-item-time-time
 			font-size: 24px
+			position: relative
+			z-index: 1000
 		.order-item-time-note
 			font-size: 12px
+			position: relative
+			z-index: 1000
 	.order-item-car
-		width: 328px
+		width: 326px
 		padding: 0 30px
 		border-right: 2px solid #eff2f3
 		.order-item-car-item
@@ -168,19 +188,23 @@
 	.order-item-close
 		width: 26px
 		padding: 0 15px
+		background: #eef1f1 
 		background: linear-gradient(#eef1f1 0%, #f5f7f7 100%)
 		text-align: center
 		cursor: pointer
 		&:hover
+			background: #f5f7f7 
 			background: linear-gradient(#eef1f1 0%, #eef1f1 100%)
 	.order-item-succes
 		width: 26px
 		padding: 0 15px
+		background: #1099b5 
 		background: linear-gradient(#1099b5 0%, #15adc4 100%)
 		text-align: center
 		border-radius: 0 5px 5px 0
 		cursor: pointer
 		&:hover
+			background: #15adc4 
 			background: linear-gradient(#1098b5 0%, #1098b5 100%)
 	.order-item-state
 		width: 26px
@@ -297,9 +321,18 @@
 		border-radius: 15px
 		color: #FFF
 		transition: opacity 0.2s linear 0.2s
+		position: relative
 		&:hover
 			opacity: 0.8
 			transition: opacity 0.2s linear 0.2s
+		&.is-arr
+			&:before
+				content: ""
+				+s($s-super-arr)
+				position: absolute
+				bottom: -9px
+				left: 50%
+				margin-left: -17px
 		.status-list-link-descr
 			margin-right: 5px
 			+osl
@@ -307,7 +340,7 @@
 			+osb
 
 .tarif
-	margin-bottom: 40px
+	padding-bottom: 40px
 	+clr
 	.tarif-item
 		float: left
@@ -406,10 +439,16 @@
 	background: #d5e9ed
 
 .grid
-	margin-bottom: 40px
+	padding-bottom: 40px
 	.grid-row
 		margin-bottom: 2px
 		+clr
+		&.m-first
+			border-radius: 5px 5px 0 0
+			overflow: hidden
+		&.m-last
+			border-radius: 0 0 5px 5px
+			overflow: hidden
 	.grid-cell
 		width: 33.333%
 		height: 370px
@@ -463,13 +502,18 @@
 	&.is-active 
 		display: block
 		width: 142px
-		margin: 0 auto 70px
+		margin: 0 auto 71px
 		padding: 7px 5px
 		border: 2px solid #eceff1
 		border-radius: 3px
 		font-size: 16px
 		color: #9FA3A4
-		+osl 
+		+osl
+		transition: all 0.2s linear 0.2s
+	&:hover
+		color: $gray
+		background: #eceff1
+		transition: all 0.2s linear 0.2s
 .wash-my-save
 	display: none
 	padding: 7px 15px
@@ -481,10 +525,14 @@
 	transition: all 0.2s linear 0.2s
 	&.is-active
 		display: inline-block
+	&:hover
+		opacity: 0.8
+		transition: all 0.2s linear 0.2s
 
 .wash-map
 	margin: 0 -30px
 	height: 370px
+	overflow: hidden
 
 .wash-contacts
 	.wash-contacts-item
@@ -594,8 +642,9 @@
 .wash-input
 	display: block
 	width: 100%
-	height: 52px
-	padding: 10px
+	line-height: 19px
+	font-size: 16px
+	padding: 15px 10px
 	margin-top: 2px
 	background: #F5F7F8
 	outline: none
@@ -617,7 +666,8 @@
 	line-height: 56px
 	padding: 0 20px
 	display: inline-block
-	background: #F5F7F8 
+	background: #F5F7F8
+	border-radius: 5px
 	margin-left: 1px
 	margin-bottom: 1px
 	cursor: pointer
@@ -664,7 +714,11 @@
 	+nosel
 	font-size: 15px
 	+osl
-	color: #9fa3a4 
+	color: #9fa3a4
+	transition: opacity 0.2s linear 0.2s
+	&:hover
+		opacity: 0.6
+		transition: opacity 0.2s linear 0.2s
 	span
 		padding-left: 27px
 		font-size: 14px
@@ -683,6 +737,12 @@
 		.checkbox-ico
 			+s($s-ch-a)
 
+.wash-map
+	overflow: hidden
+#map-mini
+	width: 100%
+	height: 112% 
+	border-radius: 0 5px 0 0
 //	MEDIA
 // ===============================================
 // +rmin(1500)
@@ -699,7 +759,22 @@
 +rmin(1600)
 	.tarif
 		.tarif-bottom
-			padding: 33px 55px 
+			padding: 33px 55px
+	.order
+		&.m-archive
+			.order-item-car
+				// width: auto
+				width: 306px
+	.order
+		&.m-archive
+			.order-item-car
+				.order-item-car-item-model
+					width: 90%
+					+text-overflow
+				.order-item-car-owner-name
+					width: 335px
 +r(650)
 	.popup
 		width: 94%
+		
+
