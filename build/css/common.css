@@ -5110,7 +5110,6 @@ body {
   width: 100%;
   z-index: 666; }
   .header.is-absolute {
-    width: 1346px;
     position: absolute;
     left: 0;
     right: 0; }
