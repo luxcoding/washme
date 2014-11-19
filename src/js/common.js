@@ -159,7 +159,7 @@ $('.popup').on('click', function(e) {
 
 
 function headerAbsolute() {
-  if ($(window).width() <= 1330) {
+  if ($(window).width() <= 1360) {
     $('.header').addClass('is-absolute');
   }
   else {
