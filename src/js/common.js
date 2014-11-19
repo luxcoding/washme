@@ -177,3 +177,10 @@ headerAbsolute();
     });
   });
 })(jQuery);
+
+if ($('html').hasClass('fullheight')){
+  var placeholder = $('.wash-pass-support .textarea').attr("placeholder", "Опишите Вашу проблему… Мы также будем рады услышать Ваши пожелания и обратную связь!");
+  // var value = $('.wash-pass-support .textarea').attr( 'name', placeholder);
+
+  // $('.wash-pass-support .textarea').removeAttr("placeholder");
+}
