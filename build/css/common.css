@@ -5109,7 +5109,9 @@ body {
   z-index: 666; }
   .header.is-absolute {
     width: 1346px;
-    position: absolute; }
+    position: absolute;
+    left: 0;
+    right: 0; }
 
 .topper {
   background: url(../img/topper-bg.png) repeat-x;
@@ -6532,10 +6534,6 @@ html, body {
 @media only screen and (max-width: 650px) {
   .popup {
     width: 94%; } }
-
-@media only screen and (max-width: 1340px) {
-  .header {
-    background: red; } }
 
 .fullheight {
   height: 100%; }
