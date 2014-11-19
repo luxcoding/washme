@@ -6533,6 +6533,10 @@ html, body {
   .popup {
     width: 94%; } }
 
+@media only screen and (max-width: 1340px) {
+  .header {
+    background: red; } }
+
 .fullheight {
   height: 100%; }
 
