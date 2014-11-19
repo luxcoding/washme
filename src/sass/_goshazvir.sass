@@ -638,6 +638,43 @@
 			background: $blue2
 			border-color: $blue2
 			transition: all 0.2s linear 0.2s
+	.wash-pass-textarea
+		margin-bottom: 10px
+		height: 120px
+		box-sizing: border-box
+		font-size: 12px
+	.wash-pass-row
+		+clr
+		// height: 18px
+		// line-height: 18px
+		&.m-form
+			margin-bottom: 30px
+			.wash-pass-right
+				height: 32px
+				line-height: 32px
+				text-align: right
+	.wash-pass-left
+		width: 150px
+		float: left
+		.wash-pass-btn
+			margin: 0
+			padding: 5px 15px
+			background: #15adc4
+			border-color: #15adc4
+			color: #fff
+			transition: opacity 0.2s linear 0.2s
+			&:hover
+				opacity: 0.7
+				transition: opacity 0.2s linear 0.2s   
+	.wash-pass-right
+		width: 190px
+		float: right
+	.wash-pass-note
+		margin-bottom: 5px
+		font-size: 16px
+		color: #376B7F
+	.wash-pass-meta
+		color: #ACADAF 
 
 .wash-input
 	display: block
@@ -743,6 +780,44 @@
 	width: 100%
 	height: 112% 
 	border-radius: 0 5px 0 0
+	
+.textarea
+	width: 100%
+	min-height: 55px
+	padding: 10px
+	resize: vertical  
+	background: #F6F7F9
+	border: none
+	overflow: hidden
+	border-radius: 5px
+	outline: none
+	// font-size: 12px
+	color: #ACADAF
+	+placeholder
+		color: #ACADAF
+	&:focus
+		+placeholder
+			color: transparent 
+
+.file
+	display: block
+	position: relative
+	.wash-input
+		opacity: 0
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+		padding: 0
+	.file-note
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		color: #ACADAF
+		text-decoration: underline
+		cursor: pointer
+		&:hover
+			text-decoration: none 
+
 //	MEDIA
 // ===============================================
 // +rmin(1500)
@@ -776,5 +851,23 @@
 +r(650)
 	.popup
 		width: 94%
-		
 
+.fullheight
+	height: 100%
+
+.fullheight body
+	height: 100%
+
+.ie8
+	.checkbox
+		// span
+		// 	padding-left: 27px
+		// 	font-size: 14px
+		input
+			opacity: 1
+			top: 5px
+		input + span
+			.checkbox-ico
+				display: none
+		input:checked + span
+			display: none

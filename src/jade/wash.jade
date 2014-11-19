@@ -3,7 +3,7 @@
 
 doctype html
 
-html
+html.fullheight
 	include includes/head.jade 
 	body
 		.animsition
@@ -201,10 +201,27 @@ html
 							.grid-cell
 								.grid-content
 									.grid-content-in
-										.wash-pass
+										.wash-pass.wash-pass-support(style='display: block;')
+											.wash-pass-title Поддержка
+											textarea.wash-pass-textarea.textarea(placeholder='Опишите Вашу проблему… Мы также будем рады услышать Ваши пожелания и обратную связь!')
+											.wash-pass-row.m-form
+												.wash-pass-left
+													a.wash-pass-btn(href='#') Отправить
+												.wash-pass-right
+													label.file
+														input.wash-input(type='file')
+														.file-note Прикрепить файл
+											.wash-pass-row
+												.wash-pass-left
+													.wash-pass-note +7 (495) 556 3745
+													.wash-pass-meta телефон
+												.wash-pass-right
+													.wash-pass-note support@washnroll.ru
+													.wash-pass-meta e-mail
+										.wash-pass.wash-pass-box(style='display: none;')
 											.wash-pass-title Изменить пароль
-											input.wash-input(type="text" placeholder="Старый пароль")
-											input.wash-input(type="text" placeholder="Новый пароль")
-											input.wash-input(type="text" placeholder="Подтвердите")
-											a(href="#").wash-pass-btn Изменить пароль
+											input.wash-input(type='text', placeholder='Старый пароль')
+											input.wash-input(type='text', placeholder='Новый пароль')
+											input.wash-input(type='text', placeholder='Подтвердите')
+											a.wash-pass-btn(href='#') Изменить пароль
 		script(data-headjs-load='js/init.js', src='js/lib/head.js')

@@ -101,6 +101,9 @@ $('.popup').on('click', function(e) {
     $('.wash-my-save').addClass('is-active');
     $('.wash-option-active').hide();
     $('.wash-option-readme').show();
+
+    $('.wash-pass-support').hide();
+    $('.wash-pass-box').show();
   });
 
   $('.js-send-save').on('click', function() {
@@ -112,6 +115,9 @@ $('.popup').on('click', function(e) {
    $('.wash-my-save').removeClass('is-active');
    $('.wash-option-active').show();
    $('.wash-option-readme').hide();
+
+   $('.wash-pass-support').show(); 
+    $('.wash-pass-box').hide();
   });
 
   // resize
