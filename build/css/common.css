@@ -4948,6 +4948,9 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: overlay-slide-out-right;
   animation-name: overlay-slide-out-right; }
 
+.animsition {
+  height: 100%; }
+
 .ico {
   display: inline-block;
   vertical-align: middle; }
@@ -5301,7 +5304,8 @@ body {
 
 .page {
   min-height: 300px;
-  padding-top: 170px; }
+  padding-top: 170px;
+  display: block; }
   .page.js-set-height {
     min-height: 100px; }
   .page.page-mod {
@@ -6279,6 +6283,46 @@ html, body {
     border-color: #15adc4;
     -webkit-transition: all 0.2s linear 0.2s;
     transition: all 0.2s linear 0.2s; }
+.wash-pass .wash-pass-textarea {
+  margin-bottom: 10px;
+  height: 120px;
+  box-sizing: border-box;
+  font-size: 12px; }
+.wash-pass .wash-pass-row:before, .wash-pass .wash-pass-row:after {
+  content: "";
+  display: table; }
+.wash-pass .wash-pass-row:after {
+  clear: both; }
+.wash-pass .wash-pass-row.m-form {
+  margin-bottom: 30px; }
+  .wash-pass .wash-pass-row.m-form .wash-pass-right {
+    height: 32px;
+    line-height: 32px;
+    text-align: right; }
+.wash-pass .wash-pass-left {
+  width: 150px;
+  float: left; }
+  .wash-pass .wash-pass-left .wash-pass-btn {
+    margin: 0;
+    padding: 5px 15px;
+    background: #15adc4;
+    border-color: #15adc4;
+    color: #fff;
+    -webkit-transition: opacity 0.2s linear 0.2s;
+    transition: opacity 0.2s linear 0.2s; }
+    .wash-pass .wash-pass-left .wash-pass-btn:hover {
+      opacity: 0.7;
+      -webkit-transition: opacity 0.2s linear 0.2s;
+      transition: opacity 0.2s linear 0.2s; }
+.wash-pass .wash-pass-right {
+  width: 190px;
+  float: right; }
+.wash-pass .wash-pass-note {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #376B7F; }
+.wash-pass .wash-pass-meta {
+  color: #ACADAF; }
 
 .wash-input {
   display: block;
@@ -6424,6 +6468,53 @@ html, body {
   height: 112%;
   border-radius: 0 5px 0 0; }
 
+.textarea {
+  width: 100%;
+  min-height: 55px;
+  padding: 10px;
+  resize: vertical;
+  background: #F6F7F9;
+  border: none;
+  overflow: hidden;
+  border-radius: 5px;
+  outline: none;
+  color: #ACADAF; }
+  .textarea::-webkit-input-placeholder {
+    color: #ACADAF; }
+  .textarea::-moz-placeholder {
+    color: #ACADAF; }
+  .textarea:-ms-input-placeholder {
+    color: #ACADAF; }
+  .textarea::placeholder {
+    color: #ACADAF; }
+  .textarea:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .textarea:focus::-moz-placeholder {
+    color: transparent; }
+  .textarea:focus:-ms-input-placeholder {
+    color: transparent; }
+  .textarea:focus::placeholder {
+    color: transparent; }
+
+.file {
+  display: block;
+  position: relative; }
+  .file .wash-input {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    padding: 0; }
+  .file .file-note {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ACADAF;
+    text-decoration: underline;
+    cursor: pointer; }
+    .file .file-note:hover {
+      text-decoration: none; }
+
 @media only screen and (min-width: 1600px) {
   .tarif .tarif-bottom {
     padding: 33px 55px; }
@@ -6441,3 +6532,17 @@ html, body {
 @media only screen and (max-width: 650px) {
   .popup {
     width: 94%; } }
+
+.fullheight {
+  height: 100%; }
+
+.fullheight body {
+  height: 100%; }
+
+.ie8 .checkbox input {
+  opacity: 1;
+  top: 5px; }
+.ie8 .checkbox input + span .checkbox-ico {
+  display: none; }
+.ie8 .checkbox input:checked + span {
+  display: none; }
